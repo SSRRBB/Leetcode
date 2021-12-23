@@ -1,5 +1,5 @@
 # Leetcode
 
-<mark>高亮</mark>
+<mark> 高亮 </mark>
 
-<front color = "red">红色<、front>
+<front color = "red"> 红色 </front>
