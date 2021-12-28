@@ -20,7 +20,7 @@ Input: nums = [1], target = 1.
 Output: 0. 
 
 ## 思路
-** 双指针 **
+**双指针 **
 two sum（基本框架+而且target是外面的，就不用for in range什么什么） + valid triangle number(用ant计数)
 
 O(nlong) + O(n)
