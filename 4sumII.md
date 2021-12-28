@@ -1,0 +1,45 @@
+## 题目
+Given four integer arrays nums1, nums2, nums3, and nums4 all of length n, return the number of tuples (i, j, k, l) such that:
+
+0 <= i, j, k, l < n
+nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
+ 
+
+Example 1:
+Input: nums1 = [1,2], nums2 = [-2,-1], nums3 = [-1,2], nums4 = [0,2]
+Output: 2
+Explanation:
+```
+The two tuples are:
+1. (0, 0, 0, 1) -> nums1[0] + nums2[0] + nums3[0] + nums4[1] = 1 + (-2) + (-1) + 2 = 0
+2. (1, 1, 0, 0) -> nums1[1] + nums2[1] + nums3[0] + nums4[0] = 2 + (-1) + (-1) + 0 = 0
+```
+Example 2:
+Input: nums1 = [0], nums2 = [0], nums3 = [0], nums4 = [0]
+Output: 1
+
+## 思路
+**折半查询法**
+
+
+## 答案
+```python
+class Solution:
+    def fourSumCount(self, nums1: List[int], nums2: List[int], nums3: List[int], nums4: List[int]) -> int:
+        # key 为 a+b之和，value为出现频率
+        counter = {}
+        
+        for num1 in nums1:
+            for num2 in nums2:
+                total = num1 + num2 
+                #如果counter里面没有 total,返回默认频率0
+                counter[total] = counter.get(total, 0) + 1
+
+        cnt = 0  
+        for num3 in nums3:
+            for num4 in nums4:
+                total = num3 + num4 
+                #如果-total出现在counter里面，累加频率，否则默认频率0
+                cnt += counter.get(-total, 0)
+        return cnt
+```
