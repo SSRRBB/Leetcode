@@ -1,0 +1,31 @@
+## 题目
+Given the root of a binary tree, return the sum of all left leaves.
+
+## 思路：
+DFS
+
+## 答案
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
+        self.res = 0 
+        ##正常是用init函数定义类的属性，这里用self.也可以实现一样效果
+        self.dfs(root)
+        return self.res
+
+    def dfs(self, root):
+        if not root:
+            return
+        # 判断是否为左子节点，是否同时又是叶子节点
+        if root.left and not root.left.left and not root.left.right:
+            self.res += root.left.val 
+        self.dfs(root.left) 
+        self.dfs(root.right) 
+        
+```
