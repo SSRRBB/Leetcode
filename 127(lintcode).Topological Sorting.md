@@ -6,6 +6,8 @@
 详细可参考 210. Course Schedule II
 BFS-求任意拓扑排序
 
+![p](https://github.com/SSRRBB/Leetcode/blob/main/Images/89.png)
+
 ## 答案：
 ```python
 
