@@ -29,11 +29,15 @@ Output: 3
 
 
 ## 思路：
+**时间和空间复杂度均为 o(n)
 **hash 分类计数功能**
 
 **dict.get(key, default=None)
-key -- 字典中要查找的键。
-default -- 如果指定键的值不存在时，返回该默认值。**
+
+**key -- 字典中要查找的键。
+
+**default -- 如果指定键的值不存在时，返回该默认值。
+
 ![s](https://github.com/SSRRBB/Leetcode/blob/main/Images/152.png)
        
 
