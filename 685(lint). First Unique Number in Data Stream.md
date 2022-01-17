@@ -41,6 +41,8 @@ Output: 3
 ![s](https://github.com/SSRRBB/Leetcode/blob/main/Images/152.png)
        
 
+**如果只让遍历一遍**
+则要加上datastream lintcode 960 (1429 leetcode)
 ## 答案：
 ```python
 class Solution:
@@ -70,5 +72,102 @@ class Solution:
                 return num
 
     
+
+```
+
+**只遍历一次**
+```python
+class Solution:
+    """
+    @param nums: a continuous stream of numbers
+    @param number: a number
+    @return: returns the first unique number
+    """
+    def firstUniqueNumber(self, nums, number):
+     # Write your code here
+        # 如果只遍历一次
+        ds = DataStream()
+        for i in range(len(nums)):
+            ds.add(nums[i])
+            if nums[i] == number: 
+                   return ds.firstUnique()   
+        return -1
+## 960题目
+class DataStream:
+
+    def __init__(self):
+        # do intialization if necessary
+        #定义双链表，头尾都为dummy
+        self.head = DlistNode()
+        self.tail = DlistNode()
+        #将头尾连起来
+        self.head.next = self.tail
+        self.tail.prev = self.head
+        #存储链表DlistNode(节点)
+        self.counter = dict()
+        #存储出现过>=2次的数字
+        self.duplicate = set()  
+    """
+    @return: the first unique number in stream
+    """
+    def firstUnique(self):
+        # write your code here
+        # first unique 在链表首部
+        # 链表为空，返回-1
+        if not self.head.next.next:
+            return -1
+        return self.head.next.value
+           
+    """
+    @param num: next number in stream
+    @return: nothing
+    """
+    def add(self, num):
+        # write your code here
+        # num第一次出现，加入链表尾部并加入哈希字典counter
+        # num第二次出现，从链表中删除（利用哈希字典counter，o(1)找到其位置)并从conter中删除，再加入duplicatesetse
+        # num第三、四次等出现，从直接忽略
+        # 总结：链表和counter里面其实只有出现过一次的数据
+
+        # 如果这个num出现过两次以上，立刻返回
+        if num in self.duplicate:
+            return
+
+        # 如果这个num第一次出现
+        if num not in self.counter:
+            self.add_to_tail(num)
+            return
+        
+        # 如果这个num第二次出现
+        self.remove(num)
+
+    def add_to_tail(self, num):
+        node = DlistNode(num)
+        node.prev = self.tail.prev
+        node.next = self.tail
+        #node.prev.next = node 
+        self.tail.prev.next = node
+        self.tail.prev = node
+        self.counter[num] = node 
+
+    def remove(self, num):
+        if num in self.counter:
+            node = self.counter[num]
+            node.prev.next = node.next
+            node.next.prev = node.prev
+            del self.counter[num]
+            self.duplicate.add(num)
+            return
+
+
+## 定义双链表
+class DlistNode:
+    def __init__(self, value = None):
+        self.value = value
+        self.prev = None 
+        self.next = None
+
+
+
 
 ```
