@@ -33,9 +33,9 @@ class Solution:
     def reverseAsciiEncodedString(self, encodeString):
         # Write your code here
         ans = ''
-        for i in range(len(encodeString) - 1, 0, -2):
-            asciiNumber = int(encodeString[(i - 1): (i + 1)])
-            ans += chr(asciiNumber)
+        for i in range(len(encodeString) - 1, 0, -2):#从后到前，每隔两个；
+            asciiNumber = int(encodeString[(i - 1): (i + 1)])：#ascii变成int
+            ans += chr(asciiNumber) #int变成字符
 
         return ans
 
