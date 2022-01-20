@@ -33,6 +33,11 @@ class Solution:
         new_node = ListNode(val)
         new_node.next = curr_Node.next
         curr_Node.next = new_node
+        #插入新节点方法二
+        new_node = ListNode(val)
+        curr_Node_next = curr_Node.next
+        curr_Node.next = new_node
+        new_node.next = curr_Node_next
     
     
         return dummy.next
