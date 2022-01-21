@@ -1,8 +1,8 @@
 ## 题目：
-!(a)[https://github.com/SSRRBB/Leetcode/blob/main/Images/204.png]
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/204.png)
 
 ## 思路：
-!(a)[https://github.com/SSRRBB/Leetcode/blob/main/Images/205.png]
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/205.png)
 
 ## 答案：
 ```python
