@@ -39,6 +39,9 @@ class Solution:
         # write your code here
         #如果是heap.sort()则会生成新的heap
         return sorted(self.heap, reverse = True)
+        #a = sorted(self.heap)
+        #b = reversed(a)
+        #return list(b)
 
 
 ```
