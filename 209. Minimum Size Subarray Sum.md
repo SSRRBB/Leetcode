@@ -31,6 +31,48 @@ Constraints:
 ## 思路：
 **同向双指针 sliding window**
 
+### 同向指针Sliding window模板2 (12道题目)
+```
+class Solution:
+    def problemName(self, s: str) -> int:
+        # Step 1: 定义需要维护的变量们 (对于滑动窗口类题目，这些变量通常是最小长度，最大长度，或者哈希表)
+        x, y = ..., ...
+
+        # Step 2: 定义窗口的首尾端 (start, end)， 然后滑动窗口
+        start = 0
+        for end in range(len(s)):
+            # Step 3: 更新需要维护的变量, 有的变量需要一个if语句来维护 (比如最大最小长度)
+            x = new_x
+            if condition:
+                y = new_y
+
+            '''
+            ------------- 下面是两种情况，读者请根据题意二选1 -------------
+            '''
+            # Step 4 - 情况1
+            # 如果题目的窗口长度固定：用一个if语句判断一下当前窗口长度是否达到了限定长度 
+            # 如果达到了，窗口左指针前移一个单位，从而保证下一次右指针右移时，窗口长度保持不变, 
+            # 左指针移动之前, 先更新Step 1定义的(部分或所有)维护变量 
+            if 窗口长度达到了限定长度:
+                # 更新 (部分或所有) 维护变量 
+                # 窗口左指针前移一个单位保证下一次右指针右移时窗口长度保持不变
+
+            # Step 4 - 情况2
+            # 如果题目的窗口长度可变: 这个时候一般涉及到窗口是否合法的问题
+            # 如果当前窗口不合法时, 用一个while去不断移动窗口左指针, 从而剔除非法元素直到窗口再次合法
+            # 在左指针移动之前更新Step 1定义的(部分或所有)维护变量 
+            while 不合法:
+                # 更新 (部分或所有) 维护变量 
+                # 不断移动窗口左指针直到窗口再次合法
+
+        # Step 5: 返回答案
+        return ...
+
+```
+
+### 同向指针Sliding window模板2
+
+
 ### 代码回想录
 **滑动窗口的精髓就是动态调节滑动窗口的起始位置：根据子序列之和**
 ```
@@ -48,26 +90,26 @@ while curr_sum >= target:
 时间复杂度：O(n)，其中 n 是数组的长度。指针 start 和 end 最多各移动 n 次。
 空间复杂度：O(1)。
 
-
-### 同向指针Sliding window模板2
-### 同向指针Sliding window模板2 (12道题目)
-
 ## 答案：
 ```python
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         ##同向双指针sliding window
-        res = len(nums) + 1 #float('inf')
+        min_len = float('inf')
         curr_sum = 0
+        
         start = 0 
         for end in range(len(nums)):
             curr_sum += nums[end]
+            # 这一段可以删除，因为下面的while已经handle了这一块儿逻辑，不过写在这也没影响
+            # if curr_sum >= target:
+            #     min_len = min(min_len, end - start + 1)
             while curr_sum >= target:
-                res = min(res, end - start + 1 )
+                min_len = min(min_len, end - start + 1 )
                 curr_sum -= nums[start]
                 start += 1
                 
-        return 0 if res == len(nums) + 1 else res
+        return 0 if min_len == float('inf') else min_len
 
 
 
