@@ -58,8 +58,8 @@ class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         ##同向双指针sliding window
         res = len(nums) + 1 #float('inf')
-        start = 0 
         curr_sum = 0
+        start = 0 
         for end in range(len(nums)):
             curr_sum += nums[end]
             while curr_sum >= target:
