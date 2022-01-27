@@ -32,7 +32,7 @@ Constraints:
 **同向双指针 sliding window**
 
 ### 同向指针Sliding window模板2 (12道题目)
-```
+```python
 class Solution:
     def problemName(self, s: str) -> int:
         # Step 1: 定义需要维护的变量们 (对于滑动窗口类题目，这些变量通常是最小长度，最大长度，或者哈希表)
