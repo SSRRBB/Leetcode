@@ -7,6 +7,8 @@
 
 **模拟法**（螺旋矩阵)(59,54)
 
+**前缀和**（subarray可以用sliding window或者前缀和）
+
 
 ## 2. 字符串
 ASCII ;Palindrome(1781(lin), 1784(lin),958(lin))
