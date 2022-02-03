@@ -23,4 +23,5 @@ ASCII ;Palindrome(1781(lin), 1784(lin),958(lin))
 **同向双指针快慢指针**
 
 ## 4.哈希表
+**Two sum, four summ**(1,167,170,454)
 
