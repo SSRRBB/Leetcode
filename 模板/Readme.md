@@ -9,11 +9,12 @@
 
 **前缀和**（subarray可以用sliding window或者前缀和）
 
+**相向双指针Two sum型**
 
 ## 2. 字符串
 ASCII ;Palindrome(1781(lin), 1784(lin),958(lin))
 
-**Reverse相向双指针**
+**相向双指针Reverse**
 ```
 反转字符串（125， 860）
 判断回文子串（34，542，151，557，186，58(jian)）
@@ -21,4 +22,5 @@ ASCII ;Palindrome(1781(lin), 1784(lin),958(lin))
 ## 2.链表
 **同向双指针快慢指针**
 
-## 3. 
+## 4.哈希表
+
