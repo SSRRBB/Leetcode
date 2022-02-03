@@ -31,7 +31,7 @@ Constraints:
 ## 思路：
 **同向双指针 sliding window**
 
-### 同向指针Sliding window模板2 (12道题目)
+### 同向指针Sliding window模板 (12道题目)
 ```python
 class Solution:
     def problemName(self, s: str) -> int:
@@ -69,10 +69,6 @@ class Solution:
         return ...
 
 ```
-
-### 同向指针Sliding window模板2
-
-
 ### 代码回想录
 **滑动窗口的精髓就是动态调节滑动窗口的起始位置：根据子序列之和**
 ```
