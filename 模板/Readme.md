@@ -29,7 +29,7 @@ ASCII:Palindrome(1781(lin), 1784(lin),958(lin))
 ## 5.双指针two pointer(算法之王)
 **数组，字符串和链表都有涉及**
 
-
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/250.png)
 
 **partition型相向双指针？
 ## 5.**前缀和**（subarray可以用sliding window或者前缀和）？？
