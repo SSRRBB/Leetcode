@@ -40,7 +40,7 @@ Hash table o(n), o(n)
         #if 2,5,6,8 5+6 > 10.  R--则LR重合，不可以
 ```
         
-## 预热答案（返回值，而非下标）
+## 预热答案（返回值，而非下标）(两个放法都不错)
 ### 法一 hash table
 ``` python
 class Solution:
@@ -66,7 +66,7 @@ class Solution:
             else:
                 return numbers[left], numbers[right]
 ```
-## 答案
+## 答案（哈希表更好啊）
 ### 法一 hash table
 ``` python
 class Solution:
@@ -105,7 +105,7 @@ class Solution:
                 #return sorted([nums[left][1], nums[right][1]]) # sorted是因为最后返回的下标要求他必须从小到大
         return [-1, -1]
  ```
- 
+# 相向双指针two sum 模板 sorted
 ## 题目 167. Two Sum II - Input Array Is Sorted
 Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number. Let these two numbers be numbers[index1] and numbers[index2] where 1 <= index1 < index2 <= numbers.length.
 
@@ -148,7 +148,7 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
         
         #if 2,5,6,8 5+6 > 10.  R--则LR重合，不可以
  ```
-## 答案
+## 答案（相向双指针two sum模板 sorted）
 ### 方法一：相向双指针 o(n), 0(1)
 ```Python
 class Solution:
