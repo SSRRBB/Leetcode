@@ -18,10 +18,12 @@ ASCII:Palindrome(1781(lin), 1784(lin),958(lin))
 判断回文子串（34，542，151，557，186，58(jian)）
 ```
 **1819(特别)**
+
 **28，459？？？**
 
 ## 2.链表
 **同向双指针快慢指针**？？
+**partition型相向双指针？?**
 
 ## 4.哈希表
 **Two sum, four summ**(1,167,170,454)
@@ -31,7 +33,6 @@ ASCII:Palindrome(1781(lin), 1784(lin),958(lin))
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/250.png)
 
-**partition型相向双指针？
 ## 5.**前缀和**（subarray可以用sliding window或者前缀和）？？
 
 
