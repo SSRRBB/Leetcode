@@ -9,7 +9,7 @@
 
 **前缀和**（subarray可以用sliding window或者前缀和）
 
-**相向双指针Two sum型**
+**相向双指针Two sum型**（167sorted）
 
 ## 2. 字符串
 ASCII ;Palindrome(1781(lin), 1784(lin),958(lin))
