@@ -7,21 +7,24 @@
 
 **模拟法**（螺旋矩阵)(59,54)
 
-**前缀和**（subarray可以用sliding window或者前缀和）
-
 **相向双指针Two sum型**（167sorted模板）（1099，609lin,443lin)（15，611，18）
 
 ## 2. 字符串
-ASCII ;Palindrome(1781(lin), 1784(lin),958(lin))
+ASCII:Palindrome(1781(lin), 1784(lin),958(lin))
 
 **相向双指针Reverse**
 ```
 反转字符串（125， 860）
 判断回文子串（34，542，151，557，186，58(jian)）
 ```
+**1819(特别)**
+**28，459？？？**
+
 ## 2.链表
 **同向双指针快慢指针**
 
 ## 4.哈希表
 **Two sum, four summ**(1,167,170,454)
+
+## 5.**前缀和**（subarray可以用sliding window或者前缀和）？？
 
