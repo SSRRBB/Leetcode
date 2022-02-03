@@ -21,12 +21,18 @@ ASCII:Palindrome(1781(lin), 1784(lin),958(lin))
 **28，459？？？**
 
 ## 2.链表
-**同向双指针快慢指针**
+**同向双指针快慢指针**？？
 
 ## 4.哈希表
 **Two sum, four summ**(1,167,170,454)
 
+## 5.双指针two pointer(算法之王)
+**数组，字符串和链表都有涉及**
+
+
+
+**partition型相向双指针？
 ## 5.**前缀和**（subarray可以用sliding window或者前缀和）？？
 
-## 5.partition型相向双指针
+
 
