@@ -5,7 +5,7 @@
 
 **相向双指针Two sum型**（167sorted模板）（1099，609lin,443lin)（15，611，18）
 
-**相向双指针 partition，空间0（1）** （31lin模板） **快速排序 **归并排序（912）**
+**相向双指针 partition，空间0（1）** （31lin模板）(905 & 49(lin);144(lin)&922 
 
 **二分法**？？
 
@@ -38,6 +38,8 @@
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/250.png)
 
 ## 5.**前缀和**（subarray可以用sliding window或者前缀和）？？
+
+## 6. **快速排序 **归并排序（912）**??
 
 
 
