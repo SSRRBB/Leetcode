@@ -1,4 +1,4 @@
-## 题目
+## 题目 144(lint) Interleaving Positive and Negative Numbers
 
 Given an array with positive and negative integers. Re-range it to interleaving with positive and negative integers.
 You are not necessary to keep the original order of positive integers or negative integers.
@@ -59,7 +59,7 @@ class Solution:
             left, right = left + 2, right - 2 #是2，间隔交换
 ```
 
-## 题目
+## 题目 922. Sort Array By Parity II
 Given an array of integers nums, half of the integers in nums are odd, and the other half are even.
 
 Sort the array so that whenever nums[i] is odd, i is odd, and whenever nums[i] is even, i is even.
