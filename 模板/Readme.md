@@ -32,14 +32,17 @@
 ## 4.哈希表？
 **Two sum, four summ**(1,167,170,454)
 
-## 堆？栈？队列？
+##  5.堆
 
-## 5.双指针two pointer(算法之王) 0（n）
+## 5.栈？队列？
+
+
+## 1.双指针two pointer(算法之王) 0（n）
 **数组，字符串和链表都有涉及**
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/250.png)
 
-## 5. 二分法 O(logn)
+## 2. 二分法 O(logn)
 **用start + 1 < end的目的是为了避免死循环
 **时间复杂度低，O(logn)**
 ```
@@ -49,7 +52,7 @@
 ```
 ## 5.**前缀和**（subarray可以用sliding window或者前缀和）？？
 
-## 6. **快速排序 **归并排序（912）**??
+## 2. **快速排序 **归并排序（912）**??
 
 
 
