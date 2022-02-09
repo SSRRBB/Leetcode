@@ -59,6 +59,8 @@
 ## 6.栈？队列？
 ## 5.**前缀和**（subarray可以用sliding window或者前缀和）？？
 
+
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/253.png)
 # 3C.BFS
 
 ## 基于树的BFS（分层遍历，最短路径）102模板
