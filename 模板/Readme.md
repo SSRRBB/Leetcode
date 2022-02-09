@@ -29,12 +29,12 @@
 **同向双指针快慢指针**？？
 
 
-## 1A.双指针two pointer(算法之王) 0（n）
+# 1A.双指针two pointer(算法之王) 0（n）
 **数组，字符串和链表都有涉及**
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/250.png)
 
-## 2B. 二分法 O(logn)
+# 2B. 二分法 O(logn)
 **用start + 1 < end的目的是为了避免死循环
 
 **时间复杂度低，O(logn)**
@@ -59,14 +59,16 @@
 ## 6.栈？队列？
 ## 5.**前缀和**（subarray可以用sliding window或者前缀和）？？
 
-## 3C.BFS**
+# 3C.BFS
+**最短路径**
 ```
-# 基于树的BFS（分层问题，最短路径）102模板
+# 基于树的BFS（分层遍历，最短路径）102模板
 103，314，297 +（10道题）
 
 # 基于图的BFS（分层问题，连通块问题）
 
 # 拓扑排序
-
+```
+# 4C.DFS
 
 
