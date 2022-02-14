@@ -1,5 +1,6 @@
 ## 题目：580& 590. N-ary Tree Preoder &Postorder Traversal
 https://leetcode.com/problems/n-ary-tree-preorder-traversal/
+
 https://leetcode.com/problems/n-ary-tree-postorder-traversal/
 
 
