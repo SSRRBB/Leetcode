@@ -132,3 +132,44 @@ class Solution:
         return depth + 1
 
 ```
+## 题目：111. Minimum Depth of Binary Tree
+https://leetcode.com/problems/minimum-depth-of-binary-tree/
+
+## 答案：
+**BFS**
+```python
+    if not root:
+            return 0
+        
+        queue = collections.deque([root])
+        res = 0
+        
+        while queue:
+            for _ in range(len(queue)):
+                node = queue.popleft()
+                if not node.left and not node.right:
+                    return res + 1
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            res += 1
+        return res
+
+```
+
+**DFS**
+```python
+ if not root:
+            return 0
+        if not root.left and not root.right:
+            return 1
+        min_depth = float('inf')
+        if root.left:
+            min_depth = min(self.minDepth(root.left), min_depth) # 获得左子树的最小高度
+        if root.right:
+            min_depth = min(self.minDepth(root.right), min_depth) # 获得右子树的最小高度
+            
+        return min_depth + 1
+
+```
