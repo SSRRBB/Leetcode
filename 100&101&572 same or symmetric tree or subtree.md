@@ -79,6 +79,7 @@ class Solution:
 
 ```
 ## 答案：101. Symmetric Tree
+![c](https://github.com/SSRRBB/Leetcode/blob/main/Images/260.png)
 **Recursion**
 ```python
 # Definition for a binary tree node.
