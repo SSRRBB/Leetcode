@@ -47,11 +47,15 @@
 
 ## 2B. 二分法 O(logn)
 ```diff
-+ this text is highlighted in green
-- this text is highlighted in red
+用 start + 1 < end的目的是为了避免死循环
+
+时间复杂度低，O(logn)
+
+寻找峰值或者连绵山峰（画图寻找）
+
 ```
 
-<font color = red>用 start + 1 < end的目的是为了避免死循环</font>
+<font color = red></font>
 
 **时间复杂度低，O(logn)**
 
