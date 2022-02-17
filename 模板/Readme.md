@@ -46,7 +46,7 @@
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/250.png)
 
 ## 2B. 二分法 O(logn)
-**用start + 1 < end的目的是为了避免死循环**
+**<font color = "red">用 start + 1 < end的目的是为了避免死循环</font>**
 
 **时间复杂度低，O(logn)**
 
