@@ -38,7 +38,7 @@ The number of nodes in the tree is in the range [0, 5000].
 
 BFS
 
-DFS
+DFS:这里的回溯指 利用 DFS 找出从根节点到叶子节点的所有路径，只要有任意一条路径的 和 等于 sum，就返True。
 ## 答案：
 BFS
 ```python
@@ -67,4 +67,31 @@ class Solution:
                 queue.append((node.right, path_sum+ node.right.val))
         return False
 
+```
+DFS
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
+        if not root:
+            return False
+        return self.dfs(root, targetSum, [root.val])
+    
+    def dfs(self, root, target, path):
+        if not root:
+            return False
+        if not root.left and not root.right and sum(path) == target:
+            return True
+        
+        left_flag, right_flag = False, False
+        if root.left:
+            left_flag = self.dfs(root.left, target, path + [root.left.val])
+        if root.right:
+            right_flag = self.dfs(root.right, target, path + [root.right.val])
+        return left_flag or right_flag
 ```
