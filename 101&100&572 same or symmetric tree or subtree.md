@@ -85,7 +85,7 @@ class Solution:
 
 ```
 
-## 题目：100. Same Tree & 101. Symmetric Tree
+## 题目：100. Same Tree
 
 https://leetcode.com/problems/same-tree/
 
