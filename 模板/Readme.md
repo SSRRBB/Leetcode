@@ -75,8 +75,7 @@
 ## 5.堆
 
 ## 6.栈？队列？
-![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/270.png)
-![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/271.png)
+
 
 ## 7.**前缀和**（subarray可以用sliding window或者前缀和）？？
 
