@@ -1,3 +1,6 @@
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/270.png)
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/271.png)
+
 ## 题目：
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/204.png)
 
