@@ -1,4 +1,5 @@
-https://www.runoob.com/python3/python3-set.html
+set: https://www.runoob.com/python3/python3-set.html
+dict: https://www.runoob.com/python3/python3-dictionary.html
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/276.png)
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/275.png)
