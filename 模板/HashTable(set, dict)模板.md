@@ -6,6 +6,7 @@ https://www.runoob.com/python3/python3-set.html
 # Dict
 
 - **collections**
+
 https://docs.python.org/zh-cn/3.8/library/collections.html
 
 https://docs.python.org/3/library/collections.html
@@ -14,8 +15,7 @@ https://docs.python.org/3/library/collections.html
 # to Python’s general purpose built-in containers, dict, list, set, and tuple.
 ```
 
-- **Counter**: dict subclass for counting hashable objects
-
+- **Counter**: dict subclass for counting hashable objects 
 **返回key : val /// val只是int**
 ```
 c = collections.Counter()                          # a new, empty counter
