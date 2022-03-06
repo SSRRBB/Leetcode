@@ -1,8 +1,38 @@
 set: https://www.runoob.com/python3/python3-set.html
 
-dict: https://www.runoob.com/python3/python3-dictionary.html
-
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/276.png)
+
+
+- **collections**
+```
+## This module implements specialized container datatypes providing alternatives 
+# to Python’s general purpose built-in containers, dict, list, set, and tuple.
+
+## Counter: dict subclass for counting hashable objects
+## defaultdict:dict subclass that calls a factory function to supply missing values
+
+OrderedDict dict subclass that remembers the order entries were added
+deque list-like container with fast appends and pops on either end
+
+
+```
+- **dict.get(num, 0):如果num不存在，返回0； 存在则不管**
+# dict.get(key, deafult = None)如果key不存在，返回None或者设置的值； 存在则不管
+
+# collections.
+
+```python
+## 计数器一
+dict = {}
+for num in nums:
+    dict[num] = dict.get(num, 0) + 1
+    
+## 计数器二
+counter = collections.Counter(nums)
+
+```
+
+dict: https://www.runoob.com/python3/python3-dictionary.html
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/275.png)
 
 
