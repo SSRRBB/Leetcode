@@ -12,6 +12,7 @@ https://www.runoob.com/python3/python3-set.html
 ```
 
 - **Counter**: dict subclass for counting hashable objects
+返回key : val。 Val只是int
 - **defaultdict**:dict subclass that calls a factory function to supply missing values
 
 - **OrderedDict**:dict subclass that remembers the order entries were added
@@ -21,12 +22,12 @@ https://www.runoob.com/python3/python3-set.html
 
 - **dict.get(num, 0)**
 ```
-dict.get(num, 0):如果num不存在，返回0； 存在则不管**
+dict.get(num, 0):如果num不存在，返回0； 存在则不管
 
 dict.get(key, deafult = None): 如果key不存在，返回None或者设置的值； 存在则不管
 
 ```
-
+- **计数器**
 ```python
 ## 计数器一
 dict = {}
@@ -38,7 +39,8 @@ counter = collections.Counter(nums)
 
 ```
 
-dict: https://www.runoob.com/python3/python3-dictionary.html
+https://www.runoob.com/python3/python3-dictionary.html
+
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/275.png)
 
 
