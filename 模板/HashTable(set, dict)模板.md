@@ -15,7 +15,8 @@ https://docs.python.org/3/library/collections.html
 ```
 
 - **Counter**: dict subclass for counting hashable objects
-**返回key : val val只是int**
+
+**返回key : val /// val只是int**
 ```
 c = collections.Counter()                          # a new, empty counter
 c = collections.Counter('gallahad')                 # a new counter from an iterable
@@ -26,7 +27,24 @@ c = collections.Counter(cats=4, dogs=8)  Counter({'dogs': 8, 'cats': 4})
 
 ```
 - **defaultdict**:dict subclass that calls a factory function to supply missing values
+**返回key : val ///  val是list, set**
+```
+# Using list as the default_factory, it is easy to group a sequence of key-value pairs into a dictionary of lists:
 
+s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+d = collections.defaultdict(list)
+for k, v in s:
+    d[k].append(v)
+print(d)  defaultdict(<class 'list'>, {'yellow': [1, 3], 'blue': [2, 4], 'red': [1]})
+
+# Setting the default_factory to set makes the defaultdict useful for building a dictionary of sets:
+s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+d = collections.defaultdict(set)
+for k, v in s:
+    d[k].add(v)
+print(d) defaultdict(<class 'set'>, {'yellow': {1, 3}, 'blue': {2, 4}, 'red': {1}})
+
+```
 - **OrderedDict**:dict subclass that remembers the order entries were added
 - **deque**: list-like container with fast appends and pops on either end
 
@@ -39,7 +57,7 @@ dict.get(num, 0):如果num不存在，返回0； 存在则不管
 dict.get(key, deafult = None): 如果key不存在，返回None或者设置的值； 存在则不管
 
 ```
-- **计数器**
+## 计数器
 ```python
 ## 计数器一
 dict = {}
