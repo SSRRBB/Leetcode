@@ -73,6 +73,18 @@ for num in nums:
     counter[num] += 1
 
 ```
+## val is list or set
+```python
+
+d = collections.defaultdict(list)
+for k, v in s:
+    d[k].append(v)
+
+d = collections.defaultdict(set)
+for k, v in s:
+    d[k].add(v)
+
+```
 
 https://www.runoob.com/python3/python3-dictionary.html
 
