@@ -6,13 +6,25 @@ https://www.runoob.com/python3/python3-set.html
 # Dict
 
 - **collections**
+https://docs.python.org/zh-cn/3.8/library/collections.html
+
+https://docs.python.org/3/library/collections.html
 ```
 ##This module implements specialized container datatypes providing alternatives 
 # to Python’s general purpose built-in containers, dict, list, set, and tuple.
 ```
 
 - **Counter**: dict subclass for counting hashable objects
-返回key : val。 Val只是int
+**返回key : val val只是int**
+```
+c = collections.Counter()                          # a new, empty counter
+c = collections.Counter('gallahad')                 # a new counter from an iterable
+print(c)  Counter({'a': 3, 'l': 2, 'g': 1, 'h': 1, 'd': 1})
+c = collections.Counter({'red': 4, 'blue': 2})      # a new counter from a mapping
+print(c)  Counter({'red': 4, 'blue': 2})
+c = collections.Counter(cats=4, dogs=8)  Counter({'dogs': 8, 'cats': 4})
+
+```
 - **defaultdict**:dict subclass that calls a factory function to supply missing values
 
 - **OrderedDict**:dict subclass that remembers the order entries were added
@@ -36,6 +48,11 @@ for num in nums:
     
 ## 计数器二
 counter = collections.Counter(nums)
+
+or 
+counter = collections.Couner()
+for num in nums:
+    counter[num] += 1
 
 ```
 
