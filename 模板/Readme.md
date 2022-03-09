@@ -74,7 +74,7 @@
 - **Design 705, 706**
 - **242,383,49 anagram**
 - **349,350,1213**
-
+- **202**
 
 ## 5.堆
 
@@ -84,6 +84,9 @@
 
 ## 7.**前缀和**（subarray可以用sliding window或者前缀和）？？
 
+
+## 7.**Math**
+- **263, 204**
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/253.png)
 ## 3C.BFS
