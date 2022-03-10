@@ -85,8 +85,11 @@
 ## 7.**前缀和**（subarray可以用sliding window或者前缀和）？？
 
 
-## 7.**Math**
+## 8.**Math**
 - **263, 204**
+
+## 9. **未归类**
+- **277, 997**
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/253.png)
 ## 3C.BFS
