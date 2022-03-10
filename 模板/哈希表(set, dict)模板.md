@@ -68,7 +68,7 @@ for num in nums:
 counter = collections.Counter(nums)
 
 or 
-counter = collections.Couner()
+counter = collections.Counter()
 for num in nums:
     counter[num] += 1
 
