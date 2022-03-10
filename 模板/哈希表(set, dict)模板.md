@@ -119,19 +119,7 @@ Hash table o(n), o(n)
 
 方法二:
 排序+相向双指针 o(nlogn)+o(n), 0(1)
-```
-思路[2, 4, 6, 9], target = 10
 
-        #[2, 4, 6, 9]
-        # ^        ^
-        # L        R
-   
-        #numbers[L] + numbers[R] ? target
-        #2 + 9 = 11 > 10, R--  L =0, R= 3
-        #2 + 6 = 8 < 10. L++ L =0 , R =2
-        #4 + 6 = 10. 完事 L =1, R =2
-        #if 2,5,6,8 5+6 > 10.  R--则LR重合，不可以
-```
         
 ## 预热答案（返回值，而非下标）(两个放法都不错)
 ### 法二 sort + 相向双指针
@@ -199,4 +187,41 @@ class Solution:
                 #return sorted([nums[left][1], nums[right][1]]) # sorted是因为最后返回的下标要求他必须从小到大
         return [-1, -1]
  ```
+## 题目: 454.4sum II
+https://leetcode.com/problems/4sum-ii/solution/
+## 思路：
+## 思路
+**哈希表（折半查询法）**
+```
+This problem is a variation of 4Sum, and we recommend checking that problem first.
+The main difference is that here we pick each element from a different array, 
+while in 4Sum all elements come from the same array. 
+For that reason, we cannot use the Two Pointers approach, where elements must be in the same sorted array.
+```
+## 答案：
+```python
+class Solution:
+    def fourSumCount(self, nums1: List[int], nums2: List[int], nums3: List[int], nums4: List[int]) -> int:
+        # key 为 a+b之和，value为出现频率
+        counter = {}
+        
+        for num1 in nums1:
+            for num2 in nums2:
+                total = num1 + num2 
+                #如果counter里面没有 total,返回默认频率0
+                counter[total] = counter.get(total, 0) + 1
+                #if total in counter:
+                    #counter[total] += 1
+                #else:
+                    #counter[total] = 1
 
+        cnt = 0  
+        for num3 in nums3:
+            for num4 in nums4:
+                total = num3 + num4 
+                #如果-total出现在counter里面，累加频率，否则默认频率0
+                #cnt += counter.get(-total, 0)
+                if -total in counter:
+                    cnt += counter[-total]
+        return cnt
+```
