@@ -15,7 +15,6 @@ list = [1,2,3,4]
 arr = np.array(list)
 print(list) [1,2,3,4]
 print(arr)  [1 2 3 3]
-
 ```
 ## 1.list转换为str  
 
@@ -77,5 +76,4 @@ print(result1) ['a', 'b', 'c', 'd', 'e']
 print(result4) ['a', ',', 'b', 'c', 'd', 'e']
 print(result2) ['a', 'b', 'c', 'd', 'e']
 print(result3) ['a', 'b', 'c', 'd', 'e']
-
 ```
