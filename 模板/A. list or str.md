@@ -25,9 +25,9 @@ list[::-1] -> [4,3,2,1,0]
 ## 2. range: list 与 str通用 (类似slice)
 **左闭右开**
 ```
-range(n) #[0, 1, 2,……，n - 1] n个元素
-range(m,n) #[m, 1, 2,……，n - 1]
-range(m,n，k) #[m, m+k, m+2k,……，n - 1]
+range(n)      -> #[0, 1, 2,……，n - 1] n个元素
+range(m,n)    -> #[m, 1, 2,……，n - 1]
+range(m,n，k) -> #[m, m+k, m+2k,……，n - 1]
 ```
 ## 3. reverse() and sort()
 **seq只能mutable的list**
@@ -42,7 +42,7 @@ reversed(seq) 输出倒序seq,seq不变
 sorted(seq)   输出排序seq,seq不变
 ```
 
-## str的各种函数
+## 4. str的各种函数
 **ASCII**
 ```
 ord('a') 输入子树，输出数值
@@ -54,7 +54,7 @@ chr(asciinumber) 输入数值，输出字符]
 .upper()
 
 char = 'a'
-char.upper() 输出A， char仍然是a  这一点和.sort()不一样
+char.upper()  -> 输出A， char仍然是a  这一点和.sort()不一样
 ```
 **输出bool value**
 ```python
@@ -66,7 +66,7 @@ char.upper() 输出A， char仍然是a  这一点和.sort()不一样
 .isspace() 空格
 ```
 
-## python 变量：address vs object
+## 5. python 变量：address vs object
 **python的变量variable储存的是对象object的地址address而不是对象object本身**
 **或者说python中所有的变量都是引用/address**
 
@@ -79,8 +79,8 @@ char.upper() 输出A， char仍然是a  这一点和.sort()不一样
 l1 = [1, 2, 3, 4]
 l2 = l1
 l2[0] = 100
-print(l1) [100, 2, 3, 4]
-print(l2) [100, 2, 3, 4]
+print(l1) -> [100, 2, 3, 4]
+print(l2) -> [100, 2, 3, 4]
 ```
 
 ```python
@@ -88,28 +88,50 @@ print(l2) [100, 2, 3, 4]
 num1 = 10
 num2 = num1
 num2 = 20
-print(num1)  10
-print(num2)  20
+print(num1) ->  10
+print(num2) ->  20
 ```
-## shallow copy:直接赋值assign = 和list.append()
+## 6. shallow copy:
+**直接赋值assign = 和list.append()都是 shallow copy **
+
 **只copy了对象的引用address，并没有copy对象oject**
 ```python
 l1 = [1, 2, 3, 4]
 l2 = l1
 l1[0] = 100
-print(l1) [100, 2, 3, 4]
-print(l2) [100, 2, 3, 4]
+print(l1) ->  [100, 2, 3, 4]
+print(l2) ->  [100, 2, 3, 4]
 ```
+**list随着alist的变化而变化**
 ```python
 list = [2]
-x = [1, 2, 3]
-list.append(x)
-print(list)  [2, [1, 2, 3]]
+alist = [1, 2, 3]
+list.append(alist)
+print(list) ->  [2, [1, 2, 3]]
 
-x[1] = 0
-print(list)  [2, [1,0, 3]]
+alist[1] = 0
+print(list) ->  [2, [1,0, 3]]
 
-id(x) == id(list[1]) True
+id(alist) == id(list[1]) True
 
 ```
+## 6. Deep copy:
+**list.append(alist) 是shallow copy**
 
+**list.append(alist[:])是deep copy**
+
+**list.append(copy.deepcopy(alist))也是deep copy**
+
+**list不会随着alist的变化而变化**
+```python
+list = [2]
+alist = [1, 2, 3]
+list.append(alist[:])
+#list.append(copy.deepcopy(alist))
+print(list) ->  [2, [1, 2, 3]]
+
+alist[1] = 0
+print(list) ->  [2, [1, 2, 3]]
+
+id(alist) == id(list[1]) -> False
+```
