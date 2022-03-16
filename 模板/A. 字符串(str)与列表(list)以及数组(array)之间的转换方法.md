@@ -3,15 +3,11 @@
 list以及array是python中经常会用到的数据类型，当需要对list以及array进行文件的读写操作的时候，由于write函数参数需要的是一个str，所以这时就需要对list或者array进行str的转换了。
 
 list和array的不同：
-
 在进行转换之间先研究下python中list和array（np.array）的不同：
 
 1、list是python中内置的数据类型，其中的数据的类型可以不相同，如java中List也可以不用相同的数据，但是为了格式的统一，就要用到泛型或者ArrayList。array中的数据类型必须是一样的。
-
 2、list中保存的数据的存放地址，而不是数据，会增加内存的占用，所以存放数据还是尽量使用array。
-
 3、list中有append的方法，可以进行追加，而array没有追加的方法，只能通过np.append来实现追加。
-
 4、在print的时候，打印的结果不同。list元素之间有","分割，而array之间是空格。
 ```
 ```python
