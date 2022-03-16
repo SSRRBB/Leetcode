@@ -66,6 +66,7 @@ char.upper() 输出A， char仍然是a  这一点和.sort()不一样
 .isspace() 空格
 ```
 
-
+## shallow/deep copy
+**python中的遍历储存的是地址而不是对象**
 
 
