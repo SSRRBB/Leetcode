@@ -66,7 +66,50 @@ char.upper() 输出A， char仍然是a  这一点和.sort()不一样
 .isspace() 空格
 ```
 
-## shallow/deep copy
-**python中的遍历储存的是地址而不是对象**
+## python 变量：address vs object
+**python的变量variable储存的是对象object的地址address而不是对象object本身**
+**或者说python中所有的变量都是引用/address**
 
+**赋值操作assign和函数传参都是复制地址copy address
+
+**修改引用adress vs 修改对象object**
+```python
+# 修改引用adress
+# l1和l2都为对象，但是都指向相同地址
+l1 = [1, 2, 3, 4]
+l2 = l1
+l2[0] = 100
+print(l1) [100, 2, 3, 4]
+print(l2) [100, 2, 3, 4]
+```
+
+```python
+# num1 地址指向对象10;开始num2地址指向对象10，后来num2地址指向对象20
+num1 = 10
+num2 = num1
+num2 = 20
+print(num1)  10
+print(num2)  20
+```
+## shallow copy:直接赋值assign = 和list.append()
+**只copy了对象的引用address，并没有copy对象oject**
+```python
+l1 = [1, 2, 3, 4]
+l2 = l1
+l1[0] = 100
+print(l1) [100, 2, 3, 4]
+print(l2) [100, 2, 3, 4]
+```
+```python
+list = [2]
+x = [1, 2, 3]
+list.append(x)
+print(list)  [2, [1, 2, 3]]
+
+x[1] = 0
+print(list)  [2, [1,0, 3]]
+
+id(x) == id(list[1]) True
+
+```
 
