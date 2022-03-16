@@ -21,7 +21,9 @@ print(list) [1,2,3,4]
 print(arr)  [1 2 3 3]
 
 ```
-## 1.list转换为str  ***.join()**
+## 1.list转换为str  
+
+**.join()**
 
 1.1 当list中存放的数据是**字符串**时，一般是通过**str中的join函数**进行转换：
 
@@ -58,20 +60,26 @@ str = ''.join(arr)
 print(str) 'abcd'
 ```
 
-## 3. str转换为list **split() // list()**
+## 3. str转换为list 
+
+**.split() // list()**
+
 在将str转化为list时，主要就是通过**str的split()函数，split()参数为空时，默认以空格来做分割**。
 
-直接通过list转换时是以每一个字符为分割的。
+直接通过**list转换时是以每一个字符为分割的。**
 
 ```python
 str1 = 'abcde'
+str4 = 'a,bcde'
 str2 = 'a b c d e'
 str3 = 'a, b, c, d, e'
 result1 = list(str1)
+result4 = list(str4)
 result2 = str2.split()
 result3 = str3.split(', ')
-print(result1)
-print(result2)
-print(result3)
+print(result1) ['a', 'b', 'c', 'd', 'e']
+print(result4) ['a', ',', 'b', 'c', 'd', 'e']
+print(result2) ['a', 'b', 'c', 'd', 'e']
+print(result3) ['a', 'b', 'c', 'd', 'e']
 
 ```
