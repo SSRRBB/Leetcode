@@ -115,7 +115,7 @@ print(list) ->  [2, [1,0, 3]]
 id(alist) == id(list[1]) True
 
 ```
-## 6. Deep copy:
+## 6. Deep copy:（leetcode 46）
 **list.append(alist) 是shallow copy**
 
 **list.append(alist[:])是deep copy**
