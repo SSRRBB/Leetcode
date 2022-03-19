@@ -83,14 +83,18 @@
 ## 4.哈希表
 - **Two sum, four sum (1,167,170)(454,532)**
 - **Design 705, 706???**
+- 
 - **26个字母既可以是数组模拟dict,也可以直接建立dict: 242,383,49 anagram，249(defaultdict)**
 - **[数字]:349,350,1213 ->[字符串]：2085，884， 2053 -> [字符串>字符]：1002**
 - **同向快慢指针，链表环 141,142,202**
 
-- **signle number 136,137 bit manipulation**
-- **data stream **
 - **sliding windwon
 - **前缀和**
+
+- **First Unique 387 
+- **data stream **
+
+- - **signle number 136,137 bit manipulation**
 - **734,781**
 
 ## 5.堆
