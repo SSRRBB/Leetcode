@@ -46,11 +46,11 @@ print(d) defaultdict(<class 'set'>, {'yellow': {1, 3}, 'blue': {2, 4}, 'red': {1
 
 ```
 - **OrderedDict**:dict subclass that remembers the order entries were added
-- 
+
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/167.png)
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/168.png)
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/169.png)
-![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/170.png)
+
 
 - **deque**: list-like container with fast appends and pops on either end
 
