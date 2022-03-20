@@ -1,4 +1,8 @@
 ## 前缀和 （prefix sum）
+https://leetcode-cn.com/problems/continuous-subarray-sum/solution/de-liao-wo-ba-qian-zhui-he-miao-de-gan-g-c8kp/
+
+https://labuladong.github.io/algo/2/22/58/
+
 - **这种通过记录数组前一部分的元素值来解题的思路，称为前缀和**
 - **如果nums原数组中均为0或者正整数，那么前缀和是一个递增的序列**
 
