@@ -196,7 +196,6 @@ class Solution:
 ## 题目: 454.4sum II
 https://leetcode.com/problems/4sum-ii/solution/
 ## 思路：
-## 思路
 **哈希表（折半查询法）**
 ```
 This problem is a variation of 4Sum, and we recommend checking that problem first.
