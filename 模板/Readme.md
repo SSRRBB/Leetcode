@@ -88,11 +88,11 @@
 - **[数字]:349,350,1213 ->[字符串]：2085，884， 2053 -> [字符串>字符]：1002**
 - **同向快慢指针，链表环 141,142,202**
 
-- **sliding windwon
+- **sliding windwon**
 - **前缀和**
 -
 - **First Unique (387, 685lint)**
-- **data stream (960lint, 1429, 146 LRU, 380)**
+- **data stream (960lint, 1429, 146LRU, 380)**
 -
 - - **signle number 136,137 bit manipulation**
 - **734,781**
