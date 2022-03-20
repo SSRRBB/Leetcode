@@ -15,7 +15,9 @@ pre[0] = 0
 pre[1] = nums[0] 
 
 pre[i] = nums[0] + nums[1] + …… + nums[i - 1]
+
 ```
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/306.png)
 **code**
 ```python
 **求 pre[i] = nums[0] + nums[1] + …… + nums[i - 1]**
@@ -35,6 +37,8 @@ def query(pre, i, j):
 
 ### 方法二(i = 0 时比较麻烦)
 
+**哈希表中加入{0(pre) ：？}key(pre): value**
+
 **pre[i] = nums[i] + pre[i - 1]**
 
 **nums[i]到nums[j]直接的和：= pre[j] - pre[i - 1]**
@@ -46,7 +50,7 @@ pre[1] = nums[0] + nums[1]
 
 pre[i] = nums[0] + nums[1] + …… + nums[i]
 ```
-
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/307.png)
 **code**
 ```python
 **求 pre[i] = nums[0] + nums[1] + …… + nums[i]**
