@@ -1,21 +1,25 @@
 ## 前缀和 （prefix sum）
-
 - **这种通过记录数组前一部分的元素值来解题的思路，称为前缀和**
+- **如果nums原数组中均为0或者正整数，那么前缀和是一个递增的序列**
+
+### 方法一(i = 0 时比较麻烦)
+
+**pre[i] = nums[i] + pre[i - 1]**
+**nums[i]到nums[j]直接的和：= pre[j] - pre[i - 1]**
+
 ```
 对于一个数组 nums,对应的前缀和pre
 pre[0] = nums[0]
 pre[1] = nums[0] + nums[1]
 
 pre[i] = nums[0] + nums[1] + …… + nums[i]
-
-如果我想要求A[i] + A[i+1] + ... + A[j]的值(0 <= i <= j <= n)
 ```
-**i = 0 时比较麻烦**
-- **pre[i] = nums[i] + pre[i - 1]**
-- **nums[i]到nums[j]直接的和：pre[j] - pre[i = 1]**
 
-**求 pre[i] = nums[0] + nums[1] + …… + nums[i]**
+
+**code**
 ```python
+**求 pre[i] = nums[0] + nums[1] + …… + nums[i]**
+
 nums = [3, 5, 2, -2, 4, 1]
 pre = [0 for i in range(len(nums)]
 for i in range(len(nums)):
@@ -23,5 +27,16 @@ for i in range(len(nums)):
         pre[i] = nums[i]
     else:
         pre[i] = nums[i] + pre[i - 1]
+```
+
+```python
+**查看 nums[i] + …… + nums[j]**
+def query(pre, i, j):
+    if i == 0:
+        return pre[j]
+    else:
+        return pre[j] - pre[i-1]
+    
+
 ```
 
