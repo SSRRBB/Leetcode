@@ -92,7 +92,7 @@
 - **前缀和**
 -
 - **First Unique (387, 685lint)**
-- **data stream (960lint, 1429, 146LRU, 380)**
+- **data stream (960lint, 1429, 146LRU, 460,LFU, 380)**
 -
 - - **signle number 136,137 bit manipulation**
 - **734,781**
