@@ -146,6 +146,8 @@ https://leetcode.com/problems/range-sum-query-2d-immutable/
 ## 思路：
 用加0的方法
 
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/309.png)
+
 ## 答案：
 ```python
 class NumMatrix:
