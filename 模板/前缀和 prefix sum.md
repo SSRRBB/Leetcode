@@ -77,3 +77,33 @@ def query(pre, i, j):
         return pre[j] - pre[i-1] 
 ```
 
+# 题
+## 1480. Running Sum of 1d Array
+https://leetcode.com/problems/running-sum-of-1d-array/
+## 思路：
+就是上面写的
+## 答案：
+```python
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        
+        runningSum = [0]* len(nums)
+        
+        for i in range(len(nums)):
+            if i == 0:
+                runningSum[i] = nums[i]
+            else:
+                runningSum[i]=  runningSum[i - 1] + nums[i]
+                
+        return runningSum
+        #####
+        pre = [0]* (len(nums) + 1)
+        
+        for i in range(1, len(nums) + 1):
+            pre[i] = pre[i - 1] + nums[i - 1]
+            
+        return pre[1:]
+```
+
+
+
