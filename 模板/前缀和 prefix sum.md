@@ -80,13 +80,20 @@ def query(pre, i, j):
 # 题
 ## 1480. Running Sum of 1d Array
 https://leetcode.com/problems/running-sum-of-1d-array/
-## 思路：
-就是上面写的
+
+就是上面写的思路
 ## 答案：
 ```python
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
-        
+               
+        pre = [0]* (len(nums) + 1)
+     
+        for i in range(1, len(nums) + 1):
+            pre[i] = pre[i - 1] + nums[i - 1]
+            
+        return pre[1:]
+        ########
         runningSum = [0]* len(nums)
         
         for i in range(len(nums)):
@@ -96,14 +103,41 @@ class Solution:
                 runningSum[i]=  runningSum[i - 1] + nums[i]
                 
         return runningSum
-        #####
-        pre = [0]* (len(nums) + 1)
-        
-        for i in range(1, len(nums) + 1):
-            pre[i] = pre[i - 1] + nums[i - 1]
-            
-        return pre[1:]
 ```
+## 303
+https://leetcode.com/problems/range-sum-query-immutable/
 
+就是上面写的思路
+
+## 答案：
+```python
+class NumArray:
+    def __init__(self, nums: List[int]):
+        self.nums = nums
+        self.pre = [0] * (len(self.nums) + 1)
+        for i in range(1, len(self.nums) + 1):
+            self.pre[i] = self.pre[i-1] + self.nums[i-1]
+            
+        #####
+        self.nums = nums
+        self.pre = [0] * len(self.nums)
+        for i in range(len(self.nums)):
+            if i == 0:
+                self.pre[i] = self.nums[i]
+            else:
+                self.pre[i] = self.pre[i - 1] + self.nums[i]
+
+    def sumRange(self, left: int, right: int) -> int:
+        return self.pre[right + 1] - self.pre[left]
+        
+        #####
+        if left == 0:
+            return self.pre[right]
+        return self.pre[right] - self.pre[left - 1]
+        
+# Your NumArray object will be instantiated and called as such:
+# obj = NumArray(nums)
+# param_1 = obj.sumRange(left,right)
+```
 
 
