@@ -11,6 +11,7 @@ Output: [0,0,1,1,2,5]
 
 ## 思路(quick sort&partition array)
 912 quick sort: **时间o(nlogn)-o(n2), 空间o(logn)-o(n)**
+
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/30.png)
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/31.png)
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/32.png)
@@ -77,8 +78,11 @@ Explanation:the real array is[1,2,2,3].So return 1.
 
 ## 思路
 快排模板 partition 时间O(n), 空间O(1) 
+
 **parition 相向双指针空间O(1)**
+
 **do it in place/no extra space/constan memory/o(1) space
+
 partition类双指针算法模板：
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/18.png)
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/17.png)
