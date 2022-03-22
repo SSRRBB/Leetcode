@@ -1,3 +1,63 @@
+## 题目：31(lint)Partition Array
+Given an array nums of integers and an int k, partition the array (i.e move the elements in "nums") such that:
+
+All elements < k are moved to the left
+All elements >= k are moved to the right
+Return the partitioning index, i.e the first index i nums[i] >= k.
+Example 1:
+
+Input:
+nums = []
+k = 9
+Output:
+0
+Explanation:Empty array, print 0.
+
+Example 2:
+Input:
+nums = [3,2,2,1]
+k = 2
+Output:
+1
+Explanation:the real array is[1,2,2,3].So return 1.
+
+## 思路
+
+
+**parition 相向双指针(来自quick sort 模板), 时间O(n), 空间O(1)**
+
+**do it in place/no extra space/constan memory/o(1) space**
+
+**partition类双指针算法模板:**
+
+![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/18.png)
+![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/17.png)
+
+## 答案
+``` Python
+class Solution:
+    """
+    @param nums: The integer array you should partition
+    @param k: An integer
+    @return: The index after partition
+    """
+    def partitionArray(self, nums, k):
+        # write your code here
+        left, right = 0, len(nums) - 1
+
+        while left <= right:
+            while left <= right and nums[left] < k:
+                left += 1
+            while left <= right and nums[right] >= k:#注意这一符号
+                right -= 1
+            if left <= right:
+                nums[left], nums[right] = nums[right], nums[left]
+                left += 1
+                right -= 1
+        
+        return left#注意返回值
+```
+
 ## 题目 912.Sort an Array
 Given an array of integers nums, sort the array in ascending order.
 
@@ -9,8 +69,9 @@ Example 2:
 Input: nums = [5,1,1,2,0,0]
 Output: [0,0,1,1,2,5]
 
-## 思路(quick sort&partition array)
-912 quick sort: **时间o(nlogn)-o(n2), 空间o(logn)-o(n)**
+## 思路
+
+**quick sort: 时间o(nlogn)-o(n2), 空间o(logn)-o(n)**
 
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/30.png)
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/31.png)
@@ -53,67 +114,10 @@ class Solution:
         self.quickSort(nums, left, end)
  ```
  
-## 题目：31(lint)Partition Array
-Given an array nums of integers and an int k, partition the array (i.e move the elements in "nums") such that:
+## 题目: 912.Sort an Array
+## 思路:
+**merge sort: 时间O(nlogn), 空间O(n)**
 
-All elements < k are moved to the left
-All elements >= k are moved to the right
-Return the partitioning index, i.e the first index i nums[i] >= k.
-Example 1:
-
-Input:
-nums = []
-k = 9
-Output:
-0
-Explanation:Empty array, print 0.
-
-Example 2:
-Input:
-nums = [3,2,2,1]
-k = 2
-Output:
-1
-Explanation:the real array is[1,2,2,3].So return 1.
-
-## 思路
-快排模板 partition 时间O(n), 空间O(1) 
-
-**parition 相向双指针空间O(1)**
-
-**do it in place/no extra space/constan memory/o(1) space
-
-partition类双指针算法模板：
-![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/18.png)
-![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/17.png)
-
-## 答案
-``` Python
-class Solution:
-    """
-    @param nums: The integer array you should partition
-    @param k: An integer
-    @return: The index after partition
-    """
-    def partitionArray(self, nums, k):
-        # write your code here
-        left, right = 0, len(nums) - 1
-
-        while left <= right:
-            while left <= right and nums[left] < k:
-                left += 1
-            while left <= right and nums[right] >= k:#注意这一符号
-                right -= 1
-            if left <= right:
-                nums[left], nums[right] = nums[right], nums[left]
-                left += 1
-                right -= 1
-        
-        return left#注意返回值
-```
-## 题目 912.Sort an Array
-## 思路
-**merge sort: **时间o(nlogn), 空间o(n)**
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/33.png)
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/34.png)
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/35.png)
