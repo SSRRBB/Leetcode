@@ -23,8 +23,9 @@ Explanation:the real array is[1,2,2,3].So return 1.
 
 ## 思路
 
+**时间O(n), 空间O(1)**
 
-**parition 相向双指针(来自quick sort 模板), 时间O(n), 空间O(1)**
+**parition 相向双指针(来自quick sort 模板), 
 
 **do it in place/no extra space/constan memory/o(1) space**
 
