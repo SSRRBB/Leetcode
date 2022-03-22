@@ -60,6 +60,8 @@
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/250.png)
 
+## 1AA. **快速排序O(nlgon)-O(n^2)空间0(logn)-O(n); 归并排序O(nlgon)-O(n^2)空间O(n)（912）**
+
 ## 2B. 二分法 O(logn)
 ```diff
 + 用 start + 1 < end的目的是为了避免死循环
@@ -82,7 +84,6 @@
 ,可以通过在映射集合上进行二分，从而实现对结果集合的二分) 875
 ```
 
-## 2BB. **快速排序 **归并排序（912）**??
 
 ## 4.哈希表
 - **Two sum, four sum (1,167,170)(454,532)**
