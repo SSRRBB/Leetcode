@@ -72,7 +72,7 @@ Output: [0,0,1,1,2,5]
 
 ## 思路
 
-**quick sort: 时间o(nlogn)-o(n2), 空间o(logn)-o(n)**
+**quick sort: 时间o(nlogn)-o(n2), 空间o(logn)-o(n) need additional space to store the recursive call stack.**
 
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/30.png)
 ![pre](https://github.com/SSRRBB/Leetcode/blob/main/Images/31.png)
