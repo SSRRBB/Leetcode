@@ -127,55 +127,51 @@ class Solution:
 ## 答案
 ```python
 class Solution:
-    """
-    @param A: an integer array
-    @return: nothing
-    """
-    def sortIntegers2(self, A):
+    def sortArray(self, nums: List[int]) -> List[int]:
         # write your code here
-        temp = [0] * len(nums)
-        #tmp = [0 for _ in range(len(A))] #[4, 1, 3, 3, 5] [0, 0, 0, 0, 0]
-        self.merge_sort(A, tmp, 0, len(A) - 1)
+        tmp = [0] * len(nums)
+        self.merge_sort(nums, tmp, 0, len(nums) - 1)
+        return nums
 
     # 递归三要素之一：递归的定义
-    def merge_sort(self, A, tmp, start, end): #[start, end]
+    def merge_sort(self, nums, tmp, start, end): #[start, end]
         #递归三要素之三：递归的出口 #如果start大于等于end,返回
         if start >= end:
             return
         #递归的三要素之二：递归的拆解
         mid = (start + end) //2 #[start, mid] [mid + 1, end]
         # divided，归并排序左边右边
-        self.merge_sort(A, tmp, start, mid)
-        self.merge_sort(A, tmp, mid + 1, end)
+        self.merge_sort(nums, tmp, start, mid)
+        self.merge_sort(nums, tmp, mid + 1, end)
         # conquer,合并两边
-        self.merge(A, tmp, start, mid, end) 
+        self.merge(nums, tmp, start, mid, end) 
 
-    def merge(self, A, tmp, start, mid, end):#核心思想
+    def merge(self, nums, tmp, start, mid, end):#核心思想
         left_index = start
         right_index = mid + 1
         index = start
 
         while left_index <= mid and right_index <= end:
-            if A[left_index] <= A[right_index]:
-                tmp[index] = A[left_index]
+            if nums[left_index] <= nums[right_index]:
+                tmp[index] = nums[left_index]
                 index += 1
                 left_index += 1
             else:
-                tmp[index] = A[right_index]
+                tmp[index] = nums[right_index]
                 index += 1
                 right_index +=1
         #不肯能两边同时剩下，只可能有一边剩下
         #处理左边剩下的
         while left_index <= mid:
-            tmp[index] = A[left_index]
+            tmp[index] = nums[left_index]
             index += 1
             left_index += 1
         #处理右边剩下的
         while right_index <= end:
-            tmp[index] = A[right_index]
+            tmp[index] = nums[right_index]
             index += 1
             right_index += 1
         #更新源数据
         for i in range(start, end + 1):
-            A[i] = tmp[i]
+            nums[i] = tmp[i]
  ```
