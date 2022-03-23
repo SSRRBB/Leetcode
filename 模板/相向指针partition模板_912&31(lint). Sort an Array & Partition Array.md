@@ -133,7 +133,8 @@ class Solution:
     """
     def sortIntegers2(self, A):
         # write your code here
-        tmp = [0 for _ in range(len(A))] #[4, 1, 3, 3, 5] [0, 0, 0, 0, 0]
+        temp = [0] * len(nums)
+        #tmp = [0 for _ in range(len(A))] #[4, 1, 3, 3, 5] [0, 0, 0, 0, 0]
         self.merge_sort(A, tmp, 0, len(A) - 1)
 
     # 递归三要素之一：递归的定义
