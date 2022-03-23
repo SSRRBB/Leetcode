@@ -125,6 +125,60 @@ class Solution:
 
 
 ## 答案
+**tmp在后边**
+```python
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        # write your code here
+        self.merge_sort(nums, 0, len(nums) - 1)
+        return nums
+
+    # 递归三要素之一：递归的定义
+    def merge_sort(self, nums, start, end): #[start, end]
+        #递归三要素之三：递归的出口 #如果start大于等于end,返回
+        if start >= end:
+            return
+        #递归的三要素之二：递归的拆解
+        mid = (start + end) //2 #[start, mid] [mid + 1, end]
+        # divided，归并排序左边右边
+        self.merge_sort(nums, start, mid)
+        self.merge_sort(nums, mid + 1, end)
+        # conquer,合并两边
+        self.merge(nums, start, mid, end) 
+
+    def merge(self, nums, start, mid, end):#核心思想
+        tmp = [0] *(end-start+1) ##这里注意
+        left_index = start
+        right_index = mid + 1
+        index = 0 #这里注意
+        
+        while left_index <= mid and right_index <= end:
+            if nums[left_index] <= nums[right_index]:
+                tmp[index] = nums[left_index]
+                left_index += 1
+                index += 1
+            else:
+                tmp[index] = nums[right_index]
+                right_index +=1
+                index += 1
+        #不肯能两边同时剩下，只可能有一边剩下
+        #处理左边剩下的
+        while left_index <= mid:
+            tmp[index] = nums[left_index]
+            left_index += 1
+            index += 1
+            
+        #处理右边剩下的
+        while right_index <= end:
+            tmp[index] = nums[right_index]
+            right_index += 1
+            index += 1
+            
+        #更新源数据
+        for i in range(index):
+            nums[start + i] = tmp[i] ##这里不一样给
+
+```
 ```python
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
