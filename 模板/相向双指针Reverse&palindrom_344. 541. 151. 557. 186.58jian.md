@@ -668,4 +668,3 @@ class Solution:
             left += 1
             right -= 1
 ```
-## 题目：Panlindrome题型
