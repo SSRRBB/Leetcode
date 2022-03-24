@@ -162,7 +162,8 @@ Constraints:
 1 <= s.length <= 104
 s contains English letters (upper-case and lower-case), digits, and spaces ' '.
 There is at least one word in s.
-
+## 思路：
+**方法三记一下，因为后面题目要用**
 ## 答案：
 # 方法一和二：
 
