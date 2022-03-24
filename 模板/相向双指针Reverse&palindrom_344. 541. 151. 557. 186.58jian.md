@@ -32,7 +32,9 @@ Output："dlrow olleh"
 
 ## 思路：
 **相向向双指针：reverse**
+
 **把string转成list(因为string是immutable的)**
+
 **str to list/list to str(详细看字符串(str)与列表(list)以及数组(array)之间的转换方法详细整)**
 ```
 时间复杂度：O(N),其中 N 为字符数组的长度。一共执行了 N/2 次的交换。
@@ -126,7 +128,6 @@ class Solution:
                 right -= 1
         
         return ''.join(ls) # 变回str
-
 ```
 ## 题目：151. Reverse Words in a String
 Given an input string s, reverse the order of the words.
@@ -177,6 +178,7 @@ There is at least one word in s.
 
 
 ## 答案：
+**方法一**
 ```python
 class Solution:
     def reverseWords(self, s: str) -> str:
@@ -186,10 +188,8 @@ class Solution:
         # " ".join 单词列表 变为字符串
          return ' '.join(reversed(s.split()))
          #return ' '.join(s.split()[::-1])
-
-
 ```
-
+**方法二**
 ```python
 class Solution:
     def reverseWords(self, s: str) -> str:
@@ -207,10 +207,8 @@ class Solution:
             right -= 1
         
         return ' '.join(ls)
-        
-
 ```
-
+**方法三**
 ```python
 class Solution:
     def reverseWords(self, s: str) -> str:
@@ -222,7 +220,6 @@ class Solution:
         self.reverse_each_word(l)
         
         return ''.join(l)
-
 
     def trim_spaces(self, s: str) -> list:
         left, right = 0, len(s) - 1
@@ -263,8 +260,6 @@ class Solution:
             # 更新start，去找下一个单词
             start = end + 1
             end += 1
-    
-
 ```
 
 ## 题目：557. Reverse Words in a String III
@@ -290,10 +285,9 @@ s does not contain any leading or trailing spaces.
 There is at least one word in s.
 All the words in s are separated by a single space.
 ```
-
 ## 思路：
 
-方法一（类似151方法一）： 
+**方法一（类似151方法一）：**
 ```
 s.split()   word[::-1]  " ".join 
         # "God Ding"  
@@ -301,19 +295,18 @@ s.split()   word[::-1]  " ".join
         # word[::-1] 然后把每个单词反转切片 ["doG","ginD"]
         # " ".join 单词列表 变为字符串
 ```
-方法二类似方法一（类似151方法二）：
+**方法二类似方法一（类似151方法二）：**
 ```
 # "God Ding"  
 # .split() 将字符串分割成单词列表 ["God" ,"Ding" ]
 # 用双指针代替word[::-1]方法: 把每个单词反转切片 ["doG","ginD"]
 # " ".join 单词列表 变为字符串
-
-
 ```
-方法三（类似151方法三）： 
+**方法三（类似151方法三）： **
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/181.png)
 
 ## 答案：
+**方法一**
 ```python
 class Solution:
     def reverseWords(self, s: str) -> str:
@@ -333,7 +326,7 @@ class Solution:
         return ' '.join(ans)
 
 ```
-
+**方法二**
 ```python
         ls = s.split()
         
@@ -353,8 +346,9 @@ class Solution:
         return ''.join(lsword)
 
 ```
+**方法三**
 ```python
-# 方法三
+
         l = list(s)
 
         # 翻转每个单词
@@ -411,7 +405,7 @@ s does not contain leading or trailing spaces.
 All the words in s are guaranteed to be separated by a single space.
 ```
 ## 思路：
-（类似151方法三）： 
+**（类似151方法三: **
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/180.png)
 ## 答案：
 ```python
@@ -426,7 +420,6 @@ class Solution:
         # 翻转每个单词
         self.reverse_each_word(s)
         
-
             
     def reverse(self, s: list, left: int, right: int) -> None:
         while left < right:
@@ -450,7 +443,6 @@ class Solution:
 ## 题目：剑指 Offer 58 - II. 左旋转字符串
 字符串的左旋转操作是把字符串前面的若干个字符转移到字符串的尾部。请定义一个函数实现字符串左旋转操作的功能。比如，输入字符串"abcdefg"和数字2，该函数将返回左旋转两位得到的结果"cdefgab"。
 
- 
 ```
 示例 1：
 
