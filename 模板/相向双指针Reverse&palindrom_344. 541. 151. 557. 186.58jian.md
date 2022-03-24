@@ -163,8 +163,6 @@ Constraints:
 s contains English letters (upper-case and lower-case), digits, and spaces ' '.
 There is at least one word in s.
 
-## 思路：
-
 ## 答案：
 # 方法一和二：
 
