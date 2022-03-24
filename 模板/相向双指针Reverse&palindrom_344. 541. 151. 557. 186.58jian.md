@@ -177,7 +177,7 @@ There is at least one word in s.
 
 
 ## 答案：
-**方法一**
+**方法一&二**
 ```python
 class Solution:
     def reverseWords(self, s: str) -> str:
@@ -188,7 +188,6 @@ class Solution:
          return ' '.join(reversed(s.split()))
          #return ' '.join(s.split()[::-1])
 ```
-**方法二**
 ```python
 class Solution:
     def reverseWords(self, s: str) -> str:
