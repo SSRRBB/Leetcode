@@ -31,16 +31,14 @@ Output："dlrow olleh"
 ```
 
 ## 思路：
-相向向双指针：reverse
+**相向向双指针：reverse**
 
 **把string转成list(因为string是immutable的)**
 
 **str to list/list to str(详细看字符串(str)与列表(list)以及数组(array)之间的转换方法详细整)**
 
-**lintcode #return s[::-1] # 一行程序**
-
-
 时间复杂度：O(N),其中 N 为字符数组的长度。一共执行了 N/2 次的交换。
+
 空间复杂度：O(1)。只使用了常数空间来存放若干变量。 双指针
 
 
@@ -57,10 +55,9 @@ class Solution:
             s[left], s[right] = s[right], s[left]
             left += 1
             right -= 1
-
-
+        
+        #return s.reverse() # 一行程序
 ```
-
 **lintcode**
 ```python
 class Solution:
@@ -78,17 +75,8 @@ class Solution:
             left += 1
             right -= 1
         
-        return ''.join(aList)
-        
-        #return s[::-1] # 一行程序
-
-
-
+        return ''.join(aList)      
 ```
-
-##
-
-
 ## 题目 541. Reverse String II
 
 Given a string s and an integer k, reverse the first k characters for every 2k characters counting from the start of the string.
