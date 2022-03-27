@@ -70,12 +70,6 @@ class Solution:
 ```
 ### 代码回想录
 **滑动窗口的精髓就是动态调节滑动窗口的起始位置：根据子序列之和**
-```
-while curr_sum >= target:
-    res = min(res, end - start + 1 )
-    curr_sum -= nums[start]
-    start += 1
-```
 **滑动窗口三要素**
 ```
 ## 窗口内是什么?curr_sum
