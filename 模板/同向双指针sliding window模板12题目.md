@@ -48,7 +48,8 @@ class Solution:
 如果套完还不懂，不要担心，让我们再套一道，套完仍然不懂，let's 再套一道......
 我们有共13 (12中1简) 道题，请相信自己，套着套着，咱们终究会弄懂的！
 
-## 643. 子数组最大平均数 I
+## 643. 子数组最大平均数 I Maximum Average Subarray I
+https://leetcode.com/problems/maximum-average-subarray-i/
 ```python
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
