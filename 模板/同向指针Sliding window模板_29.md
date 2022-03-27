@@ -67,6 +67,38 @@ class Solution:
         return ...
 
 ```
+## 题目：643. Maximum Average Subarray I(窗口长度固定, easy)
+https://leetcode.com/problems/maximum-average-subarray-i/
+
+## 答案 643
+```python
+class Solution:
+    def findMaxAverage(self, nums: List[int], k: int) -> float:
+        # Step 1:定义需要维护的变量
+        # 本题求最大平均值 (其实就是求最大和)，所以需要定义curr_sum, 同时定义一个max_avg (初始值为负无穷)
+        max_avg = float('-inf')
+        curr_sum = 0
+        # Step 2: 定义窗口的首尾端 (start, end)， 然后滑动窗口
+        start = 0
+        for end in range(len(nums)):
+            # Step 3: 更新需要维护的变量 (curr_sum, max_avg), 不断把当前值积累到curr_sum上
+            curr_sum += nums[end]
+            # if end - start + 1 == k:
+            #     max_avg = max(max_avg, curr_sum / k)
+            # # Step 4 根据题意可知窗口长度固定，所以用if
+            # # 窗口首指针前移一个单位保证窗口长度固定, 同时提前更新需要维护的变量 (curr_num)
+            # if end - start + 1 >= k:
+            #     curr_sum -= nums[start]
+            #     start += 1
+            
+            ## 个人认为此题把 step 3和 4合并更好。step 4 if 其实还是  end - start + 1 == k
+            if end - start + 1 == k:
+                max_avg = max(max_avg, curr_sum / k)
+                curr_sum -= nums[start]
+                start += 1
+        return max_avg
+            
+```
 ### 代码回想录
 **滑动窗口的精髓就是动态调节滑动窗口的起始位置：根据子序列之和**
 **滑动窗口三要素**
@@ -78,7 +110,7 @@ class Solution:
 时间复杂度：O(n)，其中 n 是数组的长度。指针 start 和 end 最多各移动 n 次。
 空间复杂度：O(1)。
 
-## 答案：
+## 答案 209：
 ```python
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
