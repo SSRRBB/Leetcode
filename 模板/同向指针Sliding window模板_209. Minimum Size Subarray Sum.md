@@ -29,9 +29,8 @@ Constraints:
 ```
 
 ## 思路：
-**同向双指针 sliding window**
 
-### 同向指针Sliding window模板 (12道题目)
+### 同向指针Sliding window模板 (12道题目)**
 ```python
 class Solution:
     def problemName(self, s: str) -> int:
