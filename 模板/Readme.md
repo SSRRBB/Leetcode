@@ -80,7 +80,10 @@ https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186683/
 ## 1AAA.**前缀和**（subarray可以用sliding window或者前缀和）
 - **1480,303,304模板**
 - **(1475lin, 325, 1844lin）**
-- **(560）**
+- **(560 + 1248）**
+
+https://github.com/azl397985856/leetcode/blob/master/selected/atMostK.md
+https://leetcode-cn.com/problems/count-number-of-nice-subarrays/solution/de-liao-wo-ba-qian-zhui-he-gei-ba-de-gan-ymzz/
 
 ## 2B. 二分法 O(logn)
 ```diff
