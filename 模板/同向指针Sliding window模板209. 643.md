@@ -240,3 +240,7 @@ class Solution:
 ## 扩展阅读
 
 - [LeetCode Sliding Window Series Discussion](https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186683/)
+
+https://github.com/azl397985856/leetcode/blob/master/thinkings/slide-window.md
+
+https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186683/
