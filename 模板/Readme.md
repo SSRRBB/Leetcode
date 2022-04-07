@@ -19,6 +19,7 @@
 
 ```
 https://github.com/azl397985856/leetcode/blob/master/thinkings/slide-window.md
+
 https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186683/
 - **相向双指针Two sum型**（167sorted模板）
 ```
@@ -83,6 +84,7 @@ https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186683/
 - **(560 + 1248）**
 
 https://github.com/azl397985856/leetcode/blob/master/selected/atMostK.md
+
 https://leetcode-cn.com/problems/count-number-of-nice-subarrays/solution/de-liao-wo-ba-qian-zhui-he-gei-ba-de-gan-ymzz/
 
 ## 2B. 二分法 O(logn)
