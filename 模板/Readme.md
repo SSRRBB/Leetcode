@@ -6,16 +6,20 @@
 - **同向双指针sliding window**(解决一些连续问题substring&subarray是连续的；subsequence是不连续的)
 ```
 209(非固定窗口) 643（固定窗口）
-非固+哈希表 3,340, 159=904; 487, 1004,1695
+非固+哈希表 3,340, 159=904-》992（atMost变）; 487, 1004,1695
 固+ 两个哈希 438，567，76；
 非固：1208
 固+ 变通： 1052，1423，1151
 485 特殊 不用sliding
 1819lint(特别)
+大号：1248（类似 992）；1348（类似992 atleast）;1234(76)
 
 3&159&209&1695&438&567&487&1004&1208&1052&1423&1151
 
+
 ```
+https://github.com/azl397985856/leetcode/blob/master/thinkings/slide-window.md
+https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186683/
 - **相向双指针Two sum型**（167sorted模板）
 ```
 (167, 1, 170)(15,18, 16）(1099，609lin,443lin-> 611,259)
