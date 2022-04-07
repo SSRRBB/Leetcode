@@ -172,3 +172,9 @@ class NumMatrix:
 # obj = NumMatrix(matrix)
 # param_1 = obj.sumRegion(row1,col1,row2,col2)
 ```
+
+https://github.com/azl397985856/leetcode/blob/master/selected/atMostK.md
+
+https://leetcode-cn.com/problems/count-number-of-nice-subarrays/solution/de-liao-wo-ba-qian-zhui-he-gei-ba-de-gan-ymzz/
+
+https://leetcode-cn.com/problems/subarray-sums-divisible-by-k/solution/xiong-mao-shua-ti-python3-you-qian-zhui-he-fu-xi-p/
