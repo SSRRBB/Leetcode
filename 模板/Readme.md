@@ -87,6 +87,8 @@ https://github.com/azl397985856/leetcode/blob/master/selected/atMostK.md
 
 https://leetcode-cn.com/problems/count-number-of-nice-subarrays/solution/de-liao-wo-ba-qian-zhui-he-gei-ba-de-gan-ymzz/
 
+https://leetcode-cn.com/problems/subarray-sums-divisible-by-k/solution/xiong-mao-shua-ti-python3-you-qian-zhui-he-fu-xi-p/
+
 ## 2B. 二分法 O(logn)
 ```diff
 + 用 start + 1 < end的目的是为了避免死循环
