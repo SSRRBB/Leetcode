@@ -81,7 +81,7 @@ https://leetcode.com/problems/binary-subarrays-with-sum/discuss/186683/
 ## 1AAA.**前缀和**（subarray可以用sliding window或者前缀和）
 - **1480,303,304模板**
 - **724；(1475lin, 325, 1844lin）；643**
-- **560小模板，1248，974**
+- **560 ==930 小模板，1248，974,523**
 
 https://github.com/azl397985856/leetcode/blob/master/selected/atMostK.md
 
