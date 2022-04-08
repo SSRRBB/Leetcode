@@ -98,7 +98,7 @@ https://leetcode-cn.com/problems/subarray-sums-divisible-by-k/solution/xiong-mao
 
 - **在有序数据集上**
 ```
-(一个数组00XX,找数组中第一个/最后一个满足某个条件的位置 OO...OOXX....XX) 704&34(模板),35,69,370,540;
+(一个数组00XX,找数组中第一个/最后一个满足某个条件的位置 OO...OOXX....XX) 704&34(模板),35,69,367,540;
 (找到条件，形成00XX) 山峰/rotate array（画图）:153,33；852（简单山峰）
 ```
 - **在未排序数据集上**
