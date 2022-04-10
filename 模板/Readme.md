@@ -90,6 +90,9 @@ https://leetcode-cn.com/problems/count-number-of-nice-subarrays/solution/de-liao
 https://leetcode-cn.com/problems/subarray-sums-divisible-by-k/solution/xiong-mao-shua-ti-python3-you-qian-zhui-he-fu-xi-p/
 
 ## 2B. 二分法 O(logn)
+
+https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/
+
 ```diff
 + 用 start + 1 < end的目的是为了避免死循环
 + 时间复杂度低，O(logn)
