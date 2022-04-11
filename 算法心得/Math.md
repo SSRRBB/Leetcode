@@ -30,3 +30,19 @@ A 能被 B 整除(12 is sivisible by 4)
 - **Prime factorization质因数分解** is a way of expressing a number as a product of its prime factors
 
 -**Factors因数** are the numbers you multiply together to get another number
+
+
+## reminder
+
+10 % -3 = -2 怎么怎么计算出来的呢?  x % y 等价于 x - (x // y)y
+
+10 // -3 = -4 在上面已经计算过(向下取整)
+
+10 % -3 = 10 - (-4)(-3) = 10 - 12 = -2
+7 % - 4 = -1  
+
+-10 % 3 = -10 - (-4)*3 = -10 + 12 = 2 
+-7 % 4 = 1   
+
+(7% - 4 = 3 java)
+(-7%4= -3 java)   
