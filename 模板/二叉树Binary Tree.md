@@ -1,7 +1,6 @@
 # *****二叉树 BFS and DFS：
 ```
-BFS
-DFS
+BFS; DFS
 ```
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/330.png)
