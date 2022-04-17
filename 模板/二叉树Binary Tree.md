@@ -1,8 +1,9 @@
 ## 二叉树 BFS and DFS：
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/330.png)
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/253.png)
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/328.png)
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/329.png)
-![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/330.png)
+
 
 ## 二叉树 种类 Balanced binary tree, Bianry search Tree and Red-Black tree：
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/331.png)
