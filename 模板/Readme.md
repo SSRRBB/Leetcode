@@ -152,9 +152,10 @@ https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong
 - **277, 997**
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/253.png)
+
 ## 3C.BFS
 
-- **基于树的BFS（分层遍历，最短路径**
+- **基于树的BFS（分层遍历，最短路径)**
 ```
 102模板429(Ntree)
 103，314，297 +（10道题）
@@ -184,8 +185,9 @@ https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong
 **中序遍历的iteration写法要会**
 
 **144，94，145&589，590（Ntree)**
-- **树的分治和遍历**
-   - ***二叉树上求值/路径 BFS/dfs(104,222,559,111)(101,100,572,110,617)（leaves513，404，481(lint)，872，366）***
+
+- **二叉树的分治和遍历（BFS/DFS）**
+   - ***二叉树上求值/路径 BFS/DFS(104,222,559,111)(101,100,572,110,617)（leaves513，404，481(lint)，872，366）***
    - ***二叉树上求路径 （回溯257, 113, 112）(lca 236,1644,1650)***
    - ***二叉树结构变化(226)(101,100,572,110)114 （105，106，654）***
    - ***BST:(700,235),(98,530,501,538，173)(递归好晕701，450，669，108,538)*** 
