@@ -1,4 +1,4 @@
-# ***** 1.二叉树 BFS and DFS：
+## ***** 1.二叉树 BFS and DFS：
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/330.png)
 ############################################################
@@ -10,7 +10,7 @@
 ############################################################
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/338.png)
 
-# *****2. 二叉树 种类 Balanced binary tree, Bianry search Tree and Red-Black tree：
+## *****2. 二叉树 种类 Balanced binary tree, Bianry search Tree and Red-Black tree：
 ```
 BST常考
 ```
@@ -23,7 +23,7 @@ BST常考
 ############################################################
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/334.png)
 
-# *****3. 二叉树解法
+## *****3. 二叉树解法
 
 ```python
 分治是特殊的遍历
