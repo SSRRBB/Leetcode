@@ -64,7 +64,11 @@ BST常考
 3.DFS+Memoizations earch
 ```
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/348.png)
+############################################################
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/346.png)
+############################################################
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/347.png)
 ############################################################
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/338.png)
+############################################################
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/350.png)
