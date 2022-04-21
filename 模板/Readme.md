@@ -158,7 +158,9 @@ https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong
 - **基于树的BFS（分层遍历，最短路径)**
 ```
 102模板429(Ntree)
-103+（10道题）；314（哈希表）
+103+（10道题)(107,199,637,515,116,117,513)
+314（哈希表）
+104,22,559,111(detpth) DFS/BFS都可以； 110（height）DFS
 BFS/DFS（297，429序列化）更好的理解BFS/DFS
 ```
 - **基于图的BFS（分层问题，连通块问题）**
