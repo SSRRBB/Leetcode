@@ -22,8 +22,7 @@ class Solution:
         if not root:
             return False
         
-        queue = collections.deque()
-        queue.append((root, root.val))# 必须分开写
+        queue = collections.deque([(root, root.val)])
         
         while queue:
             node, path_sum = queue.popleft()
@@ -56,13 +55,11 @@ class Solution:
         if not root.left and not root.right and pathsum == target:
             return True
         
-        left_flag, right_flag = False, False
         if root.left:
             left_flag = self.dfs(root.left, target, pathsum + root.left.val)
         if root.right:
             right_flag = self.dfs(root.right, target, pathsum + root.right.val)
-        return left_flag or right_flag
-        
+        return left_flag or right_flag      
 ```
 
 ## 题目 113 path sum II
