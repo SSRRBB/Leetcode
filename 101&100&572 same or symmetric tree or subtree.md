@@ -160,11 +160,10 @@ class Solution:
             queue2.append(node2.left)
             queue2.append(node2.right)
         # 如果还有节点没遍历完，则一定不等
-        if queue1 and queue1:
+        if queue1 or queue1:
             return False
         return True
  
-
 ```
 
 
