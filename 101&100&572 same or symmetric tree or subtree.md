@@ -39,6 +39,8 @@ class Solution:
             return False
         if left != None and right == None: 
             return False
+        ##if left == None or right == None or left.val != right.val:
+            return False
         #排除了空节点，再排除数值不相同的情况
         if left.val != right.val: 
             return False
