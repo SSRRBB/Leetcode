@@ -110,19 +110,21 @@ DFS
 #         self.right = right
 class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
-        #DFS
+     ##DFS
         res = []
-        self.dfs(root, targetSum, res, [])
+        path = []
+        self.dfs(root, targetSum, res, path)
         return res
 
     def dfs(self, root, targetSum, res, path):
         if not root: # 空节点，不做处理
             return
-        if not root.left and not root.right: # 叶子节点
-            if targetSum == root.val: # 剩余的「路径和」恰好等于叶子节点值
-                res.append(path + [root.val]) # 把该路径放入结果中
-        self.dfs(root.left, targetSum - root.val, res, path + [root.val]) # 左子树
-        self.dfs(root.right, targetSum - root.val, res, path + [root.val]) # 右子树
+        if not root.left and not root.right and targetSum == root.val: # 剩余的「路径和」恰好等于叶子节点值:
+            res.append(path + [root.val]) # 把该路径放入结果中
+        if root.left:
+            self.dfs(root.left, targetSum - root.val, res, path + [root.val]) # 左子树
+        if root.right:
+            self.dfs(root.right, targetSum - root.val, res, path + [root.val]) # 右子树
 
 ```
 
