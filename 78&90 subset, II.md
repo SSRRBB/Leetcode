@@ -34,7 +34,7 @@ C++ 的 vector 的 push_back() 函数，本身就是深度拷贝。另外由于�
 什么时候for可以从0开始呢？求**排列问题的时候，就要从0开始，因为集合是有序的，{1, 2} 和{2, 1}是两个集合**
 
 
-![a](![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/368.png))
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/368.png)
 
 *****
 90
