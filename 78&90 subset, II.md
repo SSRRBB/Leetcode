@@ -58,7 +58,7 @@ C++ 的 vector 的 push_back() 函数，本身就是深度拷贝。另外由于�
     
     def dfs(self, nums, index, res, path):
         if index > len(nums):
-            return ##递归退出条件
+            return ##递归出口
         res.append(path) #每次都有新的path,不用深度copy
         for i in range(index, len(nums)):  #for就要从startIndex开始，而不是从0开始！
             self.dfs(nums, i + 1, res, path + [nums[i]])
@@ -72,7 +72,7 @@ C++ 的 vector 的 push_back() 函数，本身就是深度拷贝。另外由于�
     
     def dfs(self, nums, index, res, path):
         if index > len(nums):
-            return ##递归退出条件
+            return ##递归出口
         res.append(copy.deepcopy(path))#深度copy
         for i in range(index, len(nums)):
             path.append(nums[i])
@@ -84,21 +84,7 @@ C++ 的 vector 的 push_back() 函数，本身就是深度拷贝。另外由于�
 ```python
 class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
-        res = []
-        path = []
-        nums.sort()
-        self.dfs(nums, 0, res, path)
-        return res
-    
-    def dfs(self, nums, index, res, path):
-        res.append(copy.deepcopy(path))
-        for i in range(index, len(nums)):
-            if i > index and nums[i] == nums[i -1]: #i>index意思就是不用判断nums[0]和nums[-1]
-                continue
-            path.append(nums[i])
-            self.dfs(nums, i + 1, res, path)
-            path.pop()
-            
+                    
         ##简单
         res = []
         path = []
@@ -107,12 +93,32 @@ class Solution:
         return res
     
     def dfs(self, nums, index, res, path):
+        if index > len(nums):
+            return #递归出口
         res.append(path)
         for i in range(index, len(nums)):
-            if i > index and nums[i] == nums[i - 1]:
+            if i > index and nums[i] == nums[i - 1]:#i>index意思就是不用判断nums[0]和nums[-1]
+                continue #不能选重复的数递归
+            self.dfs(nums, i + 1, res, path + [nums[i]])
+            
+            ####正规
+        res = []
+        path = []
+        nums.sort()
+        self.dfs(nums, 0, res, path)
+        return res
+    
+    def dfs(self, nums, index, res, path):
+        if index > len(nums):
+            return #递归出口
+        res.append(copy.deepcopy(path))
+        for i in range(index, len(nums)):
+            if i > index and nums[i] == nums[i -1]: #i>index意思就是不用判断nums[0]和nums[-1]
                 continue
-            self.dfs(nums, i + 1, res, path + [nums[i]] )
- 
+            path.append(nums[i])
+            self.dfs(nums, i + 1, res, path)
+            path.pop()     
+
 ```
 
 
