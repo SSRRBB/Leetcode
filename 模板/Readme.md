@@ -208,9 +208,17 @@ BFS/DFS（297，428序列化）更好的理解BFS/DFS
 ```diff
 + 找点自动回溯，找路径手动回溯
 ```
+```
+pre 
+path 题目有点这个意思
+路径path 124&543 DFS,257, 113, 112,437回溯
+```
+```
+78，46模板
+```
 - **在已知图树上遍历**
 
 
 
-_
+
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/286.png)
