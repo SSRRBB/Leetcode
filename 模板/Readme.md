@@ -121,7 +121,6 @@ https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong
 875; 410,1101
 ```
 
-
 ## 4.哈希表
 - **Two sum, four sum (1,167,170)(454,532)**
 - **Design 705, 706???**
@@ -138,17 +137,17 @@ https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong
 - - **signle number 136,137 bit manipulation**
 - **734,781**
 
-## 5.堆
-
-## 6.栈 and 队列
+## 5.栈 and 队列
 - **492,232,225 知识点 (281, 346, 362)**
 - **232，20**
+- 
+## 6.堆
 
 
-## 8.**Math**
+## 8.Math
 - **263, 204**
 
-## 9. **未归类**
+## 9.未归类
 - **277, 997**
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/253.png)
@@ -219,7 +218,7 @@ path 题目有点这个意思
 - **在已知图树上遍历**
 
 
-
+## 5D.动态规划DQ
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/286.png)
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/377.png)
