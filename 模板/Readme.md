@@ -222,3 +222,7 @@ path 题目有点这个意思
 
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/286.png)
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/377.png)
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/378.png)
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/379.png)
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/380.png)
