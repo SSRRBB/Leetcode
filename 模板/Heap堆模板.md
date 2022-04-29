@@ -35,3 +35,5 @@ heap[0] # O(1)
 ```
 **Romove any value:heapq支持O(N)**
 **iterate heap:O(NlogN)**
+
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/376.jpeg)
