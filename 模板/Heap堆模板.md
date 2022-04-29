@@ -18,7 +18,7 @@ Java: Priority Queue
 C++: priority_queue
 
 ## code 常用
-**构建堆O(N)
+**构建堆O(N)**
 ```
 import heapq
 heapq.heapify(list)
@@ -27,11 +27,11 @@ heapq.heapify(list)
 # index 从0开始
 # 底层是list
 ```
-**add O(N)；pop O(N);min/max O(1)
+**add O(N)；pop O(N);min/max O(1)**
 ```
 heapq.heappush(heap, item)
 heap.heappop(heap)
 heap[0] # O(1)
 ```
-**Romove any value:heapq支持O(N)
-**iterate heap:O(NlogN)
+**Romove any value:heapq支持O(N)**
+**iterate heap:O(NlogN)**
