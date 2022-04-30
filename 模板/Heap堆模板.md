@@ -1,3 +1,44 @@
+## Hea 堆常用来求top K 问题
+
+## key = lambda x:x[i]
+```
+## tuple
+a = [(2, 29), (5, 58), (1, 70)]
+a.sort(key = lambda x:x[0])
+print(a) [(1, 70), (2, 29), (5, 58)]
+a.sort(key = lambda x:x[1])
+print(a) [(2, 29), (5, 58), (1, 70)]
+```
+```
+## hashmap key
+hashmap= {2:29 , 5:58, 1: 70}
+print(sorted(hashmap)) [1, 2, 5]
+print(sorted(hashmap.keys())) [1, 2, 5]
+
+hashmap= {2:29 , 5:58, 1: 70}
+for i in sorted(hashmap): 
+    print((i, hashmap[i])) 
+(1, 70)
+(2, 29)
+(5, 58)
+
+
+## hashmap value:
+hashmap= {2:29 , 5:58, 1: 70}
+print(sorted(hashmap.values())) [29, 58, 70]
+
+hashmap= {2:29 , 5:58, 1: 70}
+print(sorted(hashmap.items(), key = lambda x:(x[1], x[0])))
+[(2, 29), (5, 58), (1, 70)]    hashmap value 
+
+hashmap= {2:29 , 5:58, 1: 70}
+print(sorted(hashmap.items(), key = lambda x:(x[0], x[1])))
+[(1, 70), (2, 29), (5, 58)]  hashmap key
+```
+
+
+
+
 ## Heap 堆
 
 - 底层的实现结构一般是**数组 list**
