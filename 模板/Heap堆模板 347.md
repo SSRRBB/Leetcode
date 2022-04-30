@@ -1,4 +1,26 @@
 ## Hea 堆常用来求top K 问题
+```
+heapq.heapify(list) 堆化 O(N)
+
+heapq.heappop(heap) 弹出并返回栈顶最小值 O(N),注意indexerror
+
+heapq.heappush(heap, item) heap定义堆、item增加的元素 O(n)
+
+heap[0] 值访问栈顶，但不弹出min/max O(1)
+
+Romove any value:heapq支持O(N)
+
+iterate heap:O(NlogN)
+```
+**构建堆O(N)**
+```
+import heapq
+heapq.heapify(list)
+
+# min heap
+# index 从0开始
+# 底层是list
+```
 
 ## key = lambda x:x[i]
 ```
@@ -34,9 +56,13 @@ for i in sorted(hashmap):
 hashmap= {2:29 , 5:58, 1: 70}
 print(sorted(hashmap.values())) [29, 58, 70]
 
+```
+## 题目
+
+## 答案：
+```python
 
 ```
-
 
 
 
