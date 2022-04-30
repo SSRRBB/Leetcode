@@ -9,7 +9,15 @@ print(a) [(1, 70), (2, 29), (5, 58)]
 a.sort(key = lambda x:x[1])
 print(a) [(2, 29), (5, 58), (1, 70)]
 ```
-```
+```hashmap= {2:29 , 5:58, 1: 70}
+print(sorted(hashmap.items(), key = lambda x:(x[1], x[0])))
+[(2, 29), (5, 58), (1, 70)]    hashmap value 
+
+hashmap= {2:29 , 5:58, 1: 70}
+print(sorted(hashmap.items(), key = lambda x:(x[0], x[1])))
+[(1, 70), (2, 29), (5, 58)]  hashmap key
+
+#细节
 ## hashmap key
 hashmap= {2:29 , 5:58, 1: 70}
 print(sorted(hashmap)) [1, 2, 5]
@@ -22,18 +30,11 @@ for i in sorted(hashmap):
 (2, 29)
 (5, 58)
 
-
 ## hashmap value:
 hashmap= {2:29 , 5:58, 1: 70}
 print(sorted(hashmap.values())) [29, 58, 70]
 
-hashmap= {2:29 , 5:58, 1: 70}
-print(sorted(hashmap.items(), key = lambda x:(x[1], x[0])))
-[(2, 29), (5, 58), (1, 70)]    hashmap value 
 
-hashmap= {2:29 , 5:58, 1: 70}
-print(sorted(hashmap.items(), key = lambda x:(x[0], x[1])))
-[(1, 70), (2, 29), (5, 58)]  hashmap key
 ```
 
 
