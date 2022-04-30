@@ -22,7 +22,7 @@ C++: priority_queue
 
 **heapq.heapify(list) 堆化 O(N)**
 
-**heapq.heappop(heap) 弹出栈顶最小值 O(N)**
+**heapq.heappop(heap) 弹出并返回栈顶最小值 O(N),注意indexerror**
 
 **heapq.heappush(heap, item) heap定义堆、item增加的元素 O(n)**
 
