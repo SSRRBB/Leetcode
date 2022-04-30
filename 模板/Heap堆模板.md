@@ -18,6 +18,20 @@ Java: Priority Queue
 C++: priority_queue
 
 ## code 常用
+
+
+**heapq.heapify(list) 堆化 O(N)**
+
+**heapq.heappop(heap) 弹出栈顶最小值 O(N)**
+
+**heapq.heappush(heap, item) heap定义堆、item增加的元素 O(n)**
+
+**heap[0] min/max O(1)**
+
+**Romove any value:heapq支持O(N)**
+
+**iterate heap:O(NlogN)**
+
 **构建堆O(N)**
 ```
 import heapq
@@ -27,13 +41,6 @@ heapq.heapify(list)
 # index 从0开始
 # 底层是list
 ```
-**add O(N)；pop O(N);min/max O(1)**
-```
-heapq.heappush(heap, item)
-heap.heappop(heap)
-heap[0] # O(1)
-```
-**Romove any value:heapq支持O(N)**
-**iterate heap:O(NlogN)**
 
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/214.png)
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/376.jpeg)
