@@ -26,7 +26,7 @@ C++: priority_queue
 
 **heapq.heappush(heap, item) heap定义堆、item增加的元素 O(n)**
 
-**heap[0] min/max O(1)**
+**heap[0] 值访问栈顶，但不弹出min/max O(1)**
 
 **Romove any value:heapq支持O(N)**
 
