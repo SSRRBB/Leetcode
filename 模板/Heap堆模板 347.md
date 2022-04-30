@@ -102,7 +102,7 @@ class Solution:
         hashmap = collections.Counter(nums)
         for key, value in hashmap.items():
             heapq.heappush(heap, (value, key))
-            if len(heap) > k:
+            if len(heap) > k: #默认是最小堆，这里维持了heap大小为k,把小的输出
                 heapq.heappop(heap)
         #因为说顺序没有关系
         return [items[1] for items in heap]
