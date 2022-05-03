@@ -51,14 +51,24 @@ class ListNode:
 https://leetcode.com/problems/implement-queue-using-stacks/solution/
 ## 思路：
 ```
+push: O(1),O(n)
+empty: O(1), O(1)
+peek similar with pop
+
+pop:
 Time complexity: Amortized O(1),  Worst-case O(n).
 Space complexity: O(1).
 
-In the worst-case scenario when stack b is empty, the algorithm pops n elements from stack a and pushes n elements to s2, where n is the queue size. This gives 2n operations, which is O(n). But when stack s2 is not empty the algorithm has O(1) time complexity. So what does it mean by Amortized O(1)? Please see the next section on Amortized Analysis for more information.
+In the worst-case scenario when stack b is empty, 
+the algorithm pops n elements from stack a and pushes n elements to s2, where n is the queue size.
+This gives 2n operations, which is O(n). 
+But when stack s2 is not empty the algorithm has O(1) time complexity. 
+So what does it mean by Amortized O(1)? Please see the next section on Amortized Analysis for more information.
 
-
-Amortized Analysis
-The amortized analysis gives the average performance (over time) of each operation in the worst case. The basic idea is that a worst-case operation can alter the state in such a way that the worst case cannot occur again for a long time, thus amortizing its cost.
+Amortized Analysis:
+The amortized analysis gives the average performance (over time) of each operation in the worst case. 
+The basic idea is that a worst-case operation can alter the state 
+in such a way that the worst case cannot occur again for a long time, thus amortizing its cost.
 ```
 ## 答案：
 ```python
