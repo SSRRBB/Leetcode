@@ -119,6 +119,19 @@ class MyQueue:
 https://leetcode.com/problems/implement-stack-using-queues/
 
 ## 思路：
+```
+push
+使用一个队列时，为了满足栈的特性，即最后入栈的元素最先出栈，同样需要满足队列前端的元素是最后入栈的元素。
+
+入栈操作时，首先获得入栈前的元素个数 n，然后将元素入队到队列，
+再将队列中的前 n个元素（即除了新入栈的元素之外的全部元素）依次出队并入队到队列，
+此时队列的前端的元素即为新入栈的元素，且队列的前端和后端分别对应栈顶和栈底。
+
+时间复杂度：push为O(n),其他为O(1)
+The algorithm removes n elements and inserts n+1 elements to q1 , 
+where n is the stack size. This gives 2n+1 operations. 
+空间复杂度：都为O(1)
+```
 
 ## 答案
 ```python
