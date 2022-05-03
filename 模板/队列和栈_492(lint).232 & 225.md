@@ -5,6 +5,11 @@
 https://leetcode.com/problems/implement-queue-using-stacks/solution/
 ## 思路：
 ```
+push: O(1),O(n)
+empty: O(1), O(1)
+peek similar with pop
+
+pop:
 Time complexity: Amortized O(1),  Worst-case O(n).
 Space complexity: O(1).
 
