@@ -142,7 +142,9 @@ https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong
 - **232，20**
 - 
 ## 6.堆
-
+Top K 问题
+- **离线 973,347,215,658,2654**
+- **在线 703，295，23**
 
 ## 8.Math
 - **263, 204**
