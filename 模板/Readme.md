@@ -1,3 +1,10 @@
+## 0.Math
+- **263, 204**
+
+## 00.Intuitive or Greedy
+- **277, 997**
+- **56**
+
 ## 1. 数组/列表（list）
 - **同向双指针快慢指针**(移除元素)
 ```
@@ -145,13 +152,8 @@ https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong
 Top K 问题
 - **离线 973,347,215,658,2654**
 - **在线 703，295，23**
-- **56排序题**
 
-## 8.Math
-- **263, 204**
 
-## 9.未归类
-- **277, 997**
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/253.png)
 
