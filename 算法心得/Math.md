@@ -1,4 +1,35 @@
+## reminder
+```
+python是向下整除，不是向零整除：
 
+10 // -3 = -4
+-10 // -3 = -4
+
+**10 % -3 = -2** 怎么怎么计算出来的呢?  x % y 等价于 x - (x // y)y
+
+
+10 % -3 = -2 = 10 - (-4)(-3) = 10 - 12 = -2
+7 % - 4 = -1  (同理)
+
+-10 % 3 =  2 = -10 - (-4)*3 = -10 + 12 
+-7 % 4 = 1   
+
+(7% - 4 = 3 java)
+(-7%4= -3 java)   
+```
+
+## random
+```
+import numpy as np
+import random
+
+random.randint(1, 5)  生成[1, 5]之间的一个整数
+
+np.random.randint(1, 5)   生成[1, 5)之间的一个整数
+
+random.random() 	生成一个 [0,1) 之间的均匀分布浮点数
+
+```
 
 
 ## Division in math
@@ -32,22 +63,4 @@ A 能被 B 整除(12 is sivisible by 4)
 -**Factors因数** are the numbers you multiply together to get another number
 
 
-## reminder
-```
-python是向下整除，不是向零整除：
 
-10 // -3 = -4
--10 // -3 = -4
-
-**10 % -3 = -2** 怎么怎么计算出来的呢?  x % y 等价于 x - (x // y)y
-
-
-10 % -3 = -2 = 10 - (-4)(-3) = 10 - 12 = -2
-7 % - 4 = -1  (同理)
-
--10 % 3 =  2 = -10 - (-4)*3 = -10 + 12 
--7 % 4 = 1   
-
-(7% - 4 = 3 java)
-(-7%4= -3 java)   
-```
