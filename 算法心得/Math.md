@@ -19,6 +19,7 @@ python是向下整除，不是向零整除：
 ```
 
 ## random
+**闭区间是bounded interval; 开区间是unbounded interval;**
 ```
 import numpy as np
 import random
