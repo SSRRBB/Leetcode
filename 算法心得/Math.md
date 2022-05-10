@@ -31,7 +31,12 @@ np.random.randint(1, 5)   生成[1, 5)之间的一个整数
 random.random() 	生成一个 [0,1) 之间的均匀分布浮点数
 
 ```
-
+## matrix
+```
+row = len(matrix)
+col = len(matrix[0])
+new_matrix = [ 0 * col for _ in range(row)]
+```
 
 ## Division in math
 ```
