@@ -216,13 +216,12 @@ BFS/DFS（297，428序列化）更好的理解BFS/DFS
 + 找点自动回溯，找路径手动回溯
 ```
 ```
-pre 
-path 题目有点这个意思
+上面path 题目也有点回溯的感觉
 路径path 124&543 DFS,257, 113, 112,437回溯
 ```
-```
-78，46模板
-```
+ - ***78子集；90 77组合； 46排列
+
+
 ## 6F.动态规划DQ
 
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/286.png)
