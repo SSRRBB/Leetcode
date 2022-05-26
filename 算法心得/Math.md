@@ -72,5 +72,16 @@ A 能被 B 整除(12 is sivisible by 4)
 
 -**Factors因数** are the numbers you multiply together to get another number
 
-
+## mathematical operator
+```
+ + addition(add)
+ + subtraction(minus)
+ * multiplication(time)
+ / division
+ 
+ ** exponent
+ 
+ // floor division(向下取整)
+ % modulues
+```
 
