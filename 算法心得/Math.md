@@ -41,6 +41,7 @@ row = len(matrix)
 col = len(matrix[0])
 new_matrix = [ 0 * col for _ in range(row)]
 ```
+**转置(transpose)；逆矩阵(inverse matrix)；对角线（diagonal primary second）**
 
 ## Division in math
 ```
