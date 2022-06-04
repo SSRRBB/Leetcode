@@ -229,3 +229,39 @@ class Solution:
         for i in range(start, end + 1):
             nums[i] = tmp[i]
  ```
+## Bubble sort and select sort
+
+时间复杂度： O(n^2)
+
+select sort是有点不稳定
+**Bubble sort**
+```python
+## bubble sort O(n^2)
+
+a = [5,3,4,7,6]
+
+##遍历所有元素
+for i in range(len(a)):
+    # last i element already in place
+    for j in range(len(a) - i - 1):
+        if a[j] > a[j + 1]:
+            a[j], a[j + 1] = a[j + 1], a[j]
+            
+print(a)
+```
+**Select sort**
+```python
+## select sort,不稳定 O(n^2)
+
+a = [5,3,4,7,6]
+
+ # 记录最小数的索引
+for i in range(len(a) - 1):
+    for j in range(i + 1, len(a)):
+        if a[i] > a[j ]:
+            a[i], a[j] = a[j], a[i]
+            
+print(a)
+```
+            
+            
