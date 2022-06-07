@@ -77,3 +77,40 @@ print(result4) ['a', ',', 'b', 'c', 'd', 'e']
 print(result2) ['a', 'b', 'c', 'd', 'e']
 print(result3) ['a', 'b', 'c', 'd', 'e']
 ```
+
+## zip 操作
+```python
+## number
+number = [3, 2, 8, 5, 10, 6]
+print(min(number)) # 2
+
+## str; ##alphabetic order !
+languages = ["Python", "C Programming", "Java", "JavaScript"]
+print(min(languages)) ## C Programming
+print(max(languages)) # Python
+
+liststr = ['a', 'aa']
+print(max(liststr)) ## aa
+
+## dict
+square = {3: 9, -1: 1, -2: 4}
+
+## 默认是key的最小 
+key1 = min(square)
+print(key1)    # -2
+
+## 操作成value的
+key2 = min(square, key = lambda k: square[k])
+print(key2)    # -1
+```
+
+## zip操作
+```python
+a = [1,2,3]
+b = [4,5,6]
+c = [4,5,6,7,8]
+zipped = zip(a,b) # 返回一个对象 <zip object at 0x7f7fb8906a00>
+
+print(list(zipped))  # list() 转换为列表 [(1, 4), (2, 5), (3, 6)]
+print(list(zip(a,c))) # 元素个数与最短的列表一致  [(1, 4), (2, 5), (3, 6)]
+```
