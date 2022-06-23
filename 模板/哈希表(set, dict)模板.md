@@ -230,29 +230,4 @@ class Solution:
                     cnt += counter[-total]
         return cnt
 ```
-# from sortedcontainers import SortedList
-```python
-from sortedcontainers import SortedList
 
-##初始
-test1 = [3,5,1,2,7,6,4] 
-test2 = SortedList(test1) #变成了SortedList
-print(test2) #SortedList([1, 2, 3, 4, 5, 6, 7])
-
-test3 = SortedList()
-
-##添加元素 O(logn)
-test2.add(8) #因为test2不是简单的list,是SortedList,所以用add
-print(test2) #SortedList([1, 2, 3, 4, 5, 6, 7, 8])
-
-test3.add(2)
-test3.add(8)
-print(test3) #SortedList([2, 8])
-
-
-##删除 O(logn)
-test2.remove(4) #删除元素 元素不存在时会报错
-print(test2)  #SortedList([1, 2, 3, 5, 6, 7, 8])
-test2.discard(1) #删除元素 元素不存在时不会报错
-print(test2) #SortedList([2, 3, 5, 6, 7, 8])
-```
