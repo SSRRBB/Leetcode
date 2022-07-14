@@ -1,6 +1,8 @@
 ## 题目：linkedin高频:Reservoir sampling
 ![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/484.png)
 
+https://www.geeksforgeeks.org/reservoir-sampling/
+
 Reservoir sampling is a family of randomized algorithms for randomly choosing k samples from a list of n items, where n is either a very large or unknown number. Typically n is large enough that the list doesn’t fit into main memory. For example, a list of search queries in Google and Facebook.
 So we are given a big array (or stream) of numbers (to simplify), and we need to write an efficient function to randomly select k numbers where 1 <= k <= n. Let the input array be stream[]. 
 
@@ -62,3 +64,14 @@ if __name__ == "__main__":
     k = 5;
     selectKItems(stream, n, k)
 ```
+## 思路：
+https://leetcode.cn/problems/linked-list-random-node/solution/xu-shui-chi-chou-yang-suan-fa-by-idouble-g7y9/
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/485.png)
+
+## 证明：
+
+https://zhuanlan.zhihu.com/p/107889958
+
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/487.png)
+![a](https://github.com/SSRRBB/Leetcode/blob/main/Images/486.png)
+
