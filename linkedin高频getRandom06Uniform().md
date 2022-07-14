@@ -6,6 +6,7 @@ Output:
 A method getRandom06Uniform() that generates a random integer in [0, 6] with uniform probability
 follow up: a method getRandomUniform(int a, int b) that generates a random integer in [a, b) with uniform probability
 
+# 类似 470
 ## 答案：
 **答案**
 ```python
@@ -46,7 +47,7 @@ def getRandomUniform(a, b):
         if result <= b - a:
             return result + a
 ```
-**#从有偏见的硬币产生公平的结果**
+**从有偏见的硬币产生公平的结果**
 ```
 #https://www.techiedelight.com/zh/generate-fair-results-biased-coin/
 from random import randint
