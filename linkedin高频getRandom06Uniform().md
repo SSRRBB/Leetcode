@@ -174,3 +174,9 @@ if __name__ == '__main__':
     print('1 ~', x / 100000, '%')        # ~33%
     print('2 ~', x / 100000, '%')        # ~33%
 ```
+
+## sampling with givin PMF
+idea is to translate pmf to cdf and then use inverse to draw samples 
+
+PMF https://www.probabilitycourse.com/chapter3/3_1_3_pmf.php 
+CDF https://www.probabilitycourse.com/chapter3/3_2_1_cdf.php 
