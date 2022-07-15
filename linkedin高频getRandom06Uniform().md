@@ -47,17 +47,69 @@ def getRandomUniform(a, b):
         if result <= b - a:
             return result + a
 ```
+## 题目：
+Question: Write a function that simulates an M sided dice given the probability of each side showing up
+Input:
+List of p_i, where p_i indicates probability of face i showing up. i={1, 2, ..., M} (M >= 1)
+Output:
+1 sample from this dice: index of the face that shows up
+
+Example
+input: [0.1, 0.5, 0.3, 0.1]
+Run the function 5 times,
+output: 2, 1, 2, 2, 3
+
+**生成有偏见的dice,2 面， M 面**
+https://360ai.org/question/479236.html
+如何在 python 中模拟偏向模具
+## 答案：
+```python
+import random
+def get2biasDice(a): ## [0.1, 0.9] #[p, 1 - p]
+    #input = a = [0.1, 0.9] or [p, 1 - p]
+    m = len(a)
+    p = a[0]
+    tail = 0
+    head = 1
+    r = random.random() #[0, 1)
+    # r = 0. 7
+    if r < p: 
+        return tail
+    else: #0.7 > 0.1
+        return head 
+a = [0.5, 0.5] 
+print(get2biasDice(a))
+
+
+import random   
+def gemMbiasDice(a): 
+    # input: [0.1, 0.5, 0.3, 0.1]
+    m = len(a)   
+    randRoll = random.random() # in [0,1]
+    cur_sum = 0
+    res = 1
+    for p in a:
+        cur_sum += p
+        if randRoll < cur_sum:
+            return res
+        res +=1
+        
+a = [0.1, 0.5, 0.3, 0.1]   
+print(gemMbiasDice(a))
+
+```
+## 题目1 and 2 结合：
 **从有偏见的硬币产生公平的结果**
 ```
 #https://www.techiedelight.com/zh/generate-fair-results-biased-coin/
 from random import randint
  
-HEADS, TAILS = 1, 0
+
  
 # 一个有偏函数，它以 80% 概率返回 TAILS，并且
 # HEADS 概率为 20%
 def biased():
- 
+    HEADS, TAILS = 1, 0
     # 生成一个介于 0-99 之间的随机数，包括两者
     r = randint(0, 99)
  
